@@ -1,17 +1,14 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+      "name": "Anna Smith",
+      "email": "anna@gmail.com"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
+      "name": "Lionel Green",
+      "email": "lgreen@gmail.com"   
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
+      "name": "Gina DeSantos",
+      "email": "gds@gmail.com"
   }
 ]

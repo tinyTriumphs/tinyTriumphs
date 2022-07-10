@@ -1,13 +1,33 @@
 const User = require('./User');
-const Project = require('./Project');
+const Child = require('./Child');
+const devMilestones = require('./Development');
+const medMilestones = require('./Medical');
 
-User.hasMany(Project, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+User.hasMany(Child, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
-  foreignKey: 'user_id'
+Child.belongsTo(User, {
+    foreignKey: 'user_id'
 });
 
-module.exports = { User, Project };
+Child.hasMany(devMilestones, {
+    foreignKey: 'child_id',
+    onDelete: 'CASCADE'
+});
+
+devMilestones.belongsTo(Child, {
+    foreignKey: 'child_id'
+});
+
+Child.hasMany(medMilestones, {
+    foreignKey: 'child_id',
+    onDelete: 'CASCADE'
+})
+
+medMilestones.belongsTo(Child, {
+    foreignKey: 'child_id'
+})
+
+module.exports = { User, Child, devMilestones, medMilestones };
