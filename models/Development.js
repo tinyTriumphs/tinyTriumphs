@@ -19,18 +19,20 @@ devMilestones.init(
           allowNull: false,
         },
         // NEW FIELD - Is this milestone completed yes/no
-        // medMilestone_complete: {
-        //     //TODO Boolean
-        // },
+        devMilestone_complete: {
+          type: DataTypes.BOOLEAN,
+          allowNull: false,
+          //Boolean default value is automatically false, which means milestone isn't completed
+        },
         //NEW FIELD - when the developmental milestone might happen - i.e. Jan 3, 2023
         //note: this shouldn't be rendered, but could be used to help SORT data; should be at the early end of the CDC range (aka if 3-6 mon, render at 3 mon date from birth)
-        devMilestone_ExpectedDate: {
-            type: DataTypes.DATE,
+        devMilestone_expectedDate: {
+            type: DataTypes.DATEONLY,
           allowNull: false,
           defaultValue: DataTypes.NOW,
         },
         //NEW FIELD - the RANGE of the milestone expected to occur - i.e. 3-6 months
-        devMilestone_ExpectedDate: {
+        devMilestone_expectedRange: {
             type: DataTypes.STRING,
           allowNull: false,
         },

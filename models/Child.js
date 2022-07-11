@@ -15,13 +15,14 @@ Child.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    //NEW FIELD - commenting out until we can seed with actual date
-    // birthdate: {
-    //     type: DataTypes.DATE,
-    //     allowNull: false,
-    //     defaultValue: DataTypes.NOW,
-    //   },
-    // ?? Do we need to keep this?
+    // NEW FIELD
+    birthdate: {
+      // DATEONLY = string representing the date in the ISO format of YYYY-MM-DD.
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+      // defaultValue: DataTypes.NOW,
+    },
+    //Do we need to keep this?
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,

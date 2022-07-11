@@ -1,14 +1,17 @@
 [
     {
         "name": "Little Smith",
+        "birthdate": "2022-01-10",
         "user_id": 1 
     },
     {
         "name": "Tiny Green",
+        "birthdate": "2021-10-03",
         "user_id": 2    
     },
     {
         "name": "Bitty DeSantos",
+        "birthdate": "2020-12-09",
         "user_id": 3 
     }
 ]
