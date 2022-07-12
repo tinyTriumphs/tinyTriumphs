@@ -13,13 +13,7 @@ router.post('/', async (req, res) => {
     newUser.password = await bcrypt.hash(req.body.password, 10);
     // this will create the newUser with hashed password and save to DB
     const userData = await User.create(newUser);
-
-    req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;
-
-        res.status(200).json(userData);
-    });
+    res.status(200).json(userData);
     } catch (err) {
     res.status(400).json(err);
     }
