@@ -31,13 +31,13 @@ User.init(
       },
     },
     //TODO: Tom add once validation and bcrypt works
-    // password: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    //   validate: {
-    //     len: [8],
-    //   },
-    // },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [8],
+      },
+    },
   },
   {
     //TODO: Tom bcrypt hook
