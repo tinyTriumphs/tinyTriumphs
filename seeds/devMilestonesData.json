@@ -6,5 +6,21 @@
         "devMilestone_expectedRange": "3 to 6 months",
         "devMilestone_dateComplete": "2022-10-31",
         "child_id": 1 
+    },
+    {
+        "devMilestone": "Holds Head up While on Tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-12-03",
+        "devMilestone_expectedRange": "2 Months",
+        "devMilestone_dateComplete": "2021-11-30",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "First Sounds (cooing)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-04-09",
+        "devMilestone_expectedRange": "4 months",
+        "devMilestone_dateComplete": "2021-04-11",
+        "child_id": 3
     }
 ]

@@ -1,14 +1,17 @@
 [
-  {
-      "name": "Anna Smith",
-      "email": "anna@gmail.com"
-  },
-  {
-      "name": "Lionel Green",
-      "email": "lgreen@gmail.com"   
-  },
-  {
-      "name": "Gina DeSantos",
-      "email": "gds@gmail.com"
-  }
+    {
+        "name": "Anna Smith",
+        "email": "anna@gmail.com",
+        "password": "password12345"
+    },
+    {
+        "name": "Lionel Green",
+        "email": "lgreen@gmail.com",
+        "password": "password12345"   
+    },
+    {
+        "name": "Gina DeSantos",
+        "email": "gds@gmail.com",
+        "password": "password12345"
+    }
 ]
