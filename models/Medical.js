@@ -20,7 +20,12 @@ medMilestones.init(
     },
     // NEW FIELD - Is this milestone completed yes/no
     // medMilestone_complete: {
+      //   type: DataTypes.BOOLEAN,
+      //   allowNull: false,
+      // },
     //     //TODO Boolean
+    
+
     // },
     //NEW FIELD - when the procedure/appointment is recommended to occur
     medMilestone_ToDoDate: {

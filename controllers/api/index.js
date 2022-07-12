@@ -4,7 +4,7 @@ const toDoRoutes = require('./toDoRoutes');
 const taDaRoutes = require('./taDaRoutes');
 
 //All user session data
-router.use('/todos', toDoRoutes);
+router.use('/users', userRoutes);
 
 //All UPCOMING milestones and appointments
 router.use('/todos', toDoRoutes);

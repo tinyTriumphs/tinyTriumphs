@@ -8,7 +8,7 @@ const router = require('express').Router();
 // TODO: Alex
 router.get('/', async (req, res) => {
   try {
-    res.send("<h1>Hello world!</h1>")
+    res.render('homePage');
   } catch (err) {
     res.status(500).json(err);
   }
@@ -46,12 +46,12 @@ router.get('/login', (req, res) => {
   
 //////// SAMPLE FROM MINI PROJECT ////////
 // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/profile');
-//     return;
-//   }
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
 
-//   res.render('login');
+  res.render('login');
 
 });
 
