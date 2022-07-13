@@ -4,7 +4,7 @@ const User = require('../../models/User');
 
 //TODO: Tom//
 /////SAMPLE FROM MINIPROJECT////
-const { User } = require('../../models');
+
 
 router.post('/', async (req, res) => {
     try {
