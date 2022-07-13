@@ -61,8 +61,8 @@ devMilestones.init(
         sequelize,
         timestamps: false,
         freezeTableName: true,
-        underscored: true,
-        modelName: 'medMilestones',
+        underscored: false,
+        modelName: 'devMilestones',
       }
     );
     

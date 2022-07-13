@@ -8,7 +8,7 @@ const { User, Child, medMilestones, devMilestones } = require('../models');
 
 const userData = require('./userData.json');
 const childData = require('./childData.json');
-// const devMilestonesData = require('./devMilestonesData.json');
+const devMilestonesData = require('./devMilestonesData.json');
 // const medMilestonesData = require('./medMilestonesData.json');
 
 const seedDatabase = async () => {
@@ -16,6 +16,8 @@ const seedDatabase = async () => {
 
   const users = await User.bulkCreate(userData);
   const children = await Child.bulkCreate(childData);
+  // const medical = await medMilestones.bulkCreate(medMilestonesData);
+  const development = await devMilestones.bulkCreate(devMilestonesData);
 
 
 ///// SAMPLE FROM MINI PROJECT///
