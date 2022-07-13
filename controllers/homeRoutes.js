@@ -8,7 +8,10 @@ const router = require('express').Router();
 // TODO: Alex
 router.get('/', async (req, res) => {
   try {
-    res.send('<h1>Tiny Triumphs Landing Page</h1>');
+    res.render('homepage', { 
+            // projects, 
+      // logged_in: req.session.logged_in 
+    });
   } catch (err) {
     res.status(500).json(err);
   }
