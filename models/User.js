@@ -1,5 +1,4 @@
 ///@TOM this is a direct copy from mini project
-
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
@@ -41,16 +40,16 @@ User.init(
   },
   {
     //TODO: Tom bcrypt hook
-    // hooks: {
-    //   beforeCreate: async (newUserData) => {
-    //     newUserData.password = await bcrypt.hash(newUserData.password, 10);
-    //     return newUserData;
-    //   },
-    //   beforeUpdate: async (updatedUserData) => {
-    //     updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-    //     return updatedUserData;
-    //   },
-    // },
+    hooks: {
+      beforeCreate: async (newUserData) => {
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        return newUserData;
+      },
+      beforeUpdate: async (updatedUserData) => {
+        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        return updatedUserData;
+      },
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
