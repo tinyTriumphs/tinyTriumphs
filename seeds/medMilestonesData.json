@@ -1,20 +1,23 @@
 [
     {
         "medMilestone": "Hepatitis B",
-        "medMilestone_ToDoDate": "at birth",
-        "medMilestone_dateComplete": "2022-01-10",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-01-10",
+        "medMilestone_dateComplete": "2022-01-15",
         "child_id": 1
     },
     {
         "medMilestone": "Hepatitis B",
-        "medMilestone_ToDoDate": "at birth",
-        "medMilestone_dateComplete": "2021-10-03",
+        "medMilestone_complete": false,
+        "medMilestone_ToDoDate": "2023-01-10",
+        "medMilestone_dateComplete": null,
         "child_id": 2
     },
     {
         "medMilestone": "Hepatitis B",
-        "medMilestone_ToDoDate": "at birth",
-        "medMilestone_dateComplete": "2020-12-09",
+        "medMilestone_complete": false,
+        "medMilestone_ToDoDate": "2024-01-10",
+        "medMilestone_dateComplete": null,
         "child_id": 3
     }
 ]

@@ -19,21 +19,18 @@ medMilestones.init(
       allowNull: false,
     },
     // NEW FIELD - Is this milestone completed yes/no
-    // medMilestone_complete: {
-      //   type: DataTypes.BOOLEAN,
-      //   allowNull: false,
-      // },
-    //     //TODO Boolean
-    
-
-    // },
+    medMilestone_complete: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        //Boolean default value is automatically false, which means milestone isn't completed
+      },
     //NEW FIELD - when the procedure/appointment is recommended to occur
     medMilestone_ToDoDate: {
         type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    //NEW FIELD - when the procedure/appointment is scheduled/took place
+    //NEW FIELD - when the procedure/appointment is scheduled/took place - i.e. April 1, 2022
     medMilestone_dateComplete: {
         type: DataTypes.DATE,
         allowNull: true
@@ -57,7 +54,7 @@ medMilestones.init(
     sequelize,
     timestamps: false,
     freezeTableName: true,
-    underscored: true,
+    underscored: false,
     modelName: 'medMilestones',
   }
 );
