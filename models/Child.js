@@ -35,12 +35,19 @@ Child.init(
         key: 'id',
       },
     },
+    medical_id: {
+      type: DataTypes.INTEGER,
+      referneces: {
+        model: 'medical',
+        key: 'id'
+      }
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
-    underscored: true,
+    underscored: false,
     modelName: 'child',
   }
 );
