@@ -31,36 +31,36 @@
         "devMilestone_dateComplete": "2021-04-11",
         "child_id": 4
     },
-    // {
-    //     "devMilestone": "First Tooth",
-    //     "devMilestone_complete": true,
-    //     "devMilestone_expectedDate": "2022-10-01",
-    //     "devMilestone_expectedRange": "3 to 6 months",
-    //     "devMilestone_dateComplete": "2022-10-31",
-    //     "child_id": 1 
-    // },
-    // {
-    //     "devMilestone": "Holds Head up While on Tummy",
-    //     "devMilestone_complete": true,
-    //     "devMilestone_expectedDate": "2021-12-03",
-    //     "devMilestone_expectedRange": "2 Months",
-    //     "devMilestone_dateComplete": "2021-11-30",
-    //     "child_id": 2 
-    // },
-    // {
-    //     "devMilestone": "First Sounds (cooing)",
-    //     "devMilestone_complete": true,
-    //     "devMilestone_expectedDate": "2021-04-09",
-    //     "devMilestone_expectedRange": "4 months",
-    //     "devMilestone_dateComplete": "2021-04-11",
-    //     "child_id": 3
-    // },
-    // {
-    //     "devMilestone": "Holds Head Steady While Being Held",
-    //     "devMilestone_complete": true,
-    //     "devMilestone_expectedDate": "2021-04-09",
-    //     "devMilestone_expectedRange": "4 months",
-    //     "devMilestone_dateComplete": "2021-04-11",
-    //     "child_id": 4
-    // }
+    {
+        "devMilestone": "Pulls Up to Stand",
+        "devMilestone_complete": false,
+        "devMilestone_expectedDate": "2023-01-10",
+        "devMilestone_expectedRange": "12 to 13 months",
+        "devMilestone_dateComplete": null,
+        "child_id": 1 
+    },
+    {
+        "devMilestone": "Pulls Up to Stand",
+        "devMilestone_complete": false,
+        "devMilestone_expectedDate": "2023-03-28",
+        "devMilestone_expectedRange": "12 to 13 Months",
+        "devMilestone_dateComplete": null,
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Pulls Up to Stand",
+        "devMilestone_complete": false,
+        "devMilestone_expectedDate": "2022-10-03",
+        "devMilestone_expectedRange": "12 to 13 months",
+        "devMilestone_dateComplete": null,
+        "child_id": 3
+    },
+    {
+        "devMilestone": "Pulls Up to Stand",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-12-09",
+        "devMilestone_expectedRange": "12 to 13 Months",
+        "devMilestone_dateComplete": "2021-12-01",
+        "child_id": 4
+    }
 ]
