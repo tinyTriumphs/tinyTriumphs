@@ -19,31 +19,51 @@ router.get('/', async (req, res) => {
             ]
         });
 
-router.post('/', withAuth, async (req, res) => {
-try {
-const newChild = await Child.create({
-...req.body,
-user_id: req.session.user_id
+        const childs = childData.map((childs) => childs.get({ plain: true }));
+
+        console.log(`
+        
+        THESE ARE THE CHILDREN
+        
+        `, childs);
+
+        //TODO change to render when handlebars is functional
+        res.render('children', {
+            childs,
+            logged_in: req.session.logged_in,
+            user_id: req.session.user_id
+        });
+    } catch (err) {
+    res.status(400).json(err);
+    }
 });
 
-res.status(200).json(newChild);
-} catch (err) {
-res.status(400).json(err);
-}
-});
+router.get('/:id', async (req, res) => {
+    try {
+        //Finds all children associated w/ logged in user id
+        const childData = await Child.findByPk(req.params.id, {
+            include: [{ model: User }]
+        });
 
-const childs = childData.map((childs) => childs.get({ plain: true }));
+        res.send(childData)
 
-console.log('THESE ARE THE CHILDREN', childs);
+        // const childs = childData.map((childs) => childs.get({ plain: true }));
 
-//TODO change to render when handlebars is functional
-res.render('children', {
-    childs,
-    logged_in: req.session.logged_in
-});
-} catch (err) {
-res.status(400).json(err);
-}
+        // console.log(`
+        
+        // THESE ARE THE CHILDREN
+        
+        // `, childs);
+
+        // //TODO change to render when handlebars is functional
+        // res.render('childid', {
+        //     childs,
+        //     logged_in: req.session.logged_in,
+        //     user_id: req.session.user_id
+        // });
+    } catch (err) {
+    res.status(400).json(err);
+    }
 });
 
 module.exports = router;
