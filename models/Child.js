@@ -34,6 +34,7 @@ Child.init(
         model: 'user',
         key: 'id',
       },
+      allowNull: false
     },
     medical_id: {
       type: DataTypes.INTEGER,
