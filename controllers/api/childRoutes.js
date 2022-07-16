@@ -19,18 +19,31 @@ router.get('/', async (req, res) => {
             ]
         });
 
-        const childs = childData.map((childs) => childs.get({ plain: true }));
+router.post('/', withAuth, async (req, res) => {
+try {
+const newChild = await Child.create({
+...req.body,
+user_id: req.session.user_id
+});
 
-        console.log('THESE ARE THE CHILDREN', childs);
+res.status(200).json(newChild);
+} catch (err) {
+res.status(400).json(err);
+}
+});
 
-        //TODO change to render when handlebars is functional
-        res.render('children', {
-            childs,
-            logged_in: req.session.logged_in
-        });
-    } catch (err) {
-    res.status(400).json(err);
-    }
+const childs = childData.map((childs) => childs.get({ plain: true }));
+
+console.log('THESE ARE THE CHILDREN', childs);
+
+//TODO change to render when handlebars is functional
+res.render('children', {
+    childs,
+    logged_in: req.session.logged_in
+});
+} catch (err) {
+res.status(400).json(err);
+}
 });
 
 module.exports = router;
