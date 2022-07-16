@@ -35,6 +35,7 @@ Child.init(
         key: 'id',
         allowNull: false,
       },
+      allowNull: false
     },
     medical_id: {
       type: DataTypes.INTEGER,
