@@ -11,9 +11,9 @@ const newFormHandler = async (event) => {
     const gender = document.querySelector('#child-gender').value.trim();
   
     if (name && childBirthDate && gender) {
-      const response = await fetch(`/api/projects`, {
+      const response = await fetch(`/api/children`, {
         method: 'POST',
-        body: JSON.stringify({ name, childBirthdate, gender }),
+        body: JSON.stringify({ name, childBirthDate, gender }),
         headers: {
           'Content-Type': 'application/json',
         },
