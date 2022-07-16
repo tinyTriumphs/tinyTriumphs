@@ -19,6 +19,8 @@ router.get('/', async (req, res) => {
             ]
         });
 
+        const childs = childData.map((childs) => childs.get({ plain: true }));
+
         console.log(`
         
         THESE ARE THE CHILDREN
@@ -43,7 +45,7 @@ router.get('/:id', async (req, res) => {
             include: [{ model: User }]
         });
 
-        // res.send(childData)
+        res.send(childData)
 
         // const childs = childData.map((childs) => childs.get({ plain: true }));
 

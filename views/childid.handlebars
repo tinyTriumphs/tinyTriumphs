@@ -5,7 +5,7 @@
     {{#each childs as |child|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <li><strong>Name:</strong> {{child.name}}</li>
+        {{!-- <li><strong>Name:</strong> {{child.name}}</li> --}}
         <li><strong>Birthday:</strong> {{child.birthdate}}</li>
         <li><strong>View My Child: <a href="/api/children/{{child.id}}">Link</a></strong></li>
         <li><strong>TODO - <a href="/api/children/{{child.id}}">Link</a> to Todos</strong></li>
