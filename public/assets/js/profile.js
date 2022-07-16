@@ -5,7 +5,6 @@
 /////SAMPLE FROM MINIPROJECT
 const newFormHandler = async (event) => {
     event.preventDefault();
-  
     const name = document.querySelector('#child-name').value.trim();
     console.log(name);
     const childBirthDate = document.querySelector('#child-birthdate').value.trim();
@@ -25,9 +24,9 @@ const newFormHandler = async (event) => {
         headers: {
           'Content-Type': 'application/json',
         },
-      });
-  
-      if (response.ok) {
+        });
+
+    if (response.ok) {
         document.location.replace('/profile');
         con.connect(function(err) {
           if (err) throw err;
@@ -43,7 +42,6 @@ const newFormHandler = async (event) => {
         });
       } else {
         alert('Failed to create project');
-      }
     }
   };
   
