@@ -21,8 +21,13 @@ router.get('/', async (req, res) => {
 
         const children = childData.map((children) => children.get({ plain: true }));
 
+        console.log('THESE ARE THE CHILDREN', children);
+
         //TODO change to render when handlebars is functional
-        res.send(children);
+        res.render('children', {
+            ...children,
+            logged_in: req.session.logged_in
+        });
     } catch (err) {
     res.status(400).json(err);
     }
