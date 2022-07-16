@@ -61,7 +61,7 @@ const newFormHandler = async (event) => {
   //       alert('Failed to delete project');
   //     }
   //   }
-  // };
+  };
   
   document
     .querySelector('.new-child-form')
@@ -71,4 +71,3 @@ const newFormHandler = async (event) => {
   //   .querySelector('.new-project-form')
   //   .addEventListener('click', delButtonHandler);
     // .addEventListener('click', delButtonHandler);
-  
