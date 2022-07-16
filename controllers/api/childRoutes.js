@@ -59,10 +59,24 @@ router.get('/:id', async (req, res) => {
     try {
         //Finds all children associated w/ logged in user id
         const childData = await Child.findByPk(req.params.id, {
-            include: [{ model: User }]
+            include: [
+                { model: User },
+                { model: devMilestones,
+                    attributes: ['id', 'devMilestone', 'devMilestone_complete', 'devMilestone_expectedDate', 'devMilestone_expectedRange', 'devMilestone_dateComplete', 'child_id']
+                }
+            ]
         });
 
-        res.send(childData)
+        const child = childData.get({ plain: true});
+
+        console.log(child);
+
+        res.render('childid', {
+            ...child,
+            logged_in: true
+        })
+
+        // res.send(childData)
 
         // const childs = childData.map((childs) => childs.get({ plain: true }));
 
