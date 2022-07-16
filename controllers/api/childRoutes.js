@@ -5,21 +5,18 @@ const { User, Child, devMilestones, medMilestones } = require('../../models');
 //TODO currently gets all children in the database; want to get all children associated w/ User ID
 router.get('/', async (req, res) => {
     try {
-        // res.send('<h1>Tiny Triumphs Landing Page</h1>');
+        //Finds all children associated w/ logged in user id
         const childData = await Child.findAll({
-            include: 
-            [
+            include: [
                 {
-                    //Includes linked parent name only
                     model: User,
-                    attributes: ['name'],
-                },
-                {
-                    //Gets all med milestones
-                    model: medMilestones,
-                    // attributes: ['medMilestone']
+                    attributes: ['id'],
+                    where: {
+                        //NOTE should be req.session.user_id but testing with hard coded ID for now
+                        id: 1
+                    }
                 }
-            ],
+            ]
         });
 
         const children = childData.map((children) => children.get({ plain: true }));
