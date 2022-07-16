@@ -1,8 +1,25 @@
 <div class="text-center">
+  {{#if childs.length}}
+  <div class="col-md-6 project-list">
+    <h3>My Children:</h3>
 
-  <h2>These are your children, {{name}}!</h2>
-  <p>{{children}}</p>
-  <p>Created by {{user.name}}</p>
+    {{#each childs as |child|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <li><strong>Name:</strong> {{child.name}}</li>
+        <li><strong>Birthday:</strong> {{child.birthdate}}</li>
+        <li><strong>TODO - <a href="/#">Link</a> to Todos</strong></li>
+        <li><strong>TODO - <a href="/#">Link</a> to Tadas</strong></li>
+      </div>
+     </div>
+
+     <p>---</p>
+    </div>
+    {{/each}}
+  </div>
+  {{else}}
+  You don't currently have any children!
+  {{/if}}
 </div>
 
 <script src="assets/js/profile.js"></script>
