@@ -1,16 +1,17 @@
 const router = require('express').Router();
+const withAuth = require('../utils/auth');
+const { User } = require('../models');
 
 /////SAMPLE FROM MINI PROJECT/////
 // const { Project, User } = require('../models');
-// const withAuth = require('../utils/auth');
 
 
 // TODO: Alex
 router.get('/', async (req, res) => {
   try {
     res.render('homepage', { 
-            // projects, 
-      // logged_in: req.session.logged_in 
+      // projects, 
+      logged_in: req.session.logged_in 
     });
   } catch (err) {
     res.status(500).json(err);
@@ -18,30 +19,28 @@ router.get('/', async (req, res) => {
 });
 
 // TODO: Tom
+
 // Use withAuth middleware to prevent access to route
-// router.get('/profile', withAuth, async (req, res) => {
-//   try {
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] }
+    });
 
-// //TODO: Tom
+    console.log(req.session);
+    console.log(userData);
 
-//     //////// SAMPLE FROM MINI PROJECT ////////
-//      // Find the logged in user based on the session ID
+    const user = userData.get({ plain: true });
 
-//      const userData = await User.findByPk(req.session.user_id, {
-//         attributes: { exclude: ['password'] },
-//         include: [{ model: Project }],
-//       });
-  
-//       const user = userData.get({ plain: true });
-  
-//       res.render('profile', {
-//         ...user,
-//         logged_in: true
-//     //   });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 
 // TODO: Tom
@@ -50,6 +49,8 @@ router.get('/login', (req, res) => {
 //////// SAMPLE FROM MINI PROJECT ////////
 // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
+    console.log(req.session.logged_in);
+    console.log('We are logged in and are redirecting')
     res.redirect('/profile');
     return;
   }
