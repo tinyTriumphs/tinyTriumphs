@@ -36,13 +36,6 @@ Child.init(
         allowNull: false,
       },
       allowNull: false
-    },
-    medical_id: {
-      type: DataTypes.INTEGER,
-      referneces: {
-        model: 'medical',
-        key: 'id'
-      }
     }
   },
   {
