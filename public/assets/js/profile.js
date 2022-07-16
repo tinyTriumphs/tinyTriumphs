@@ -17,29 +17,33 @@ const newFormHandler = async (event) => {
     //   const time = d.toTimeString().split(' ')[0];
     //   return `${date} ${time}`};
 
-    if (name && childBirthDate) {
+    if (name && childBirthDate
+      ) {
       const response = await fetch(`/api/children`, {
         method: 'POST',
-        body: JSON.stringify({ name, childBirthDate}),
+        body: JSON.stringify({ name, birthdate: childBirthDate
+        }),
         headers: {
           'Content-Type': 'application/json',
         },
         });
+        console.log(response);
 
     if (response.ok) {
-        document.location.replace('/profile');
-        con.connect(function(err) {
-          if (err) throw err;
-          console.log("Connected!");
-          var sql = "INSERT INTO child (name, birthdate) VALUES ?";
-          var values = [
-            [name, childBirthDate],
-          ];
-          con.query(sql, function (err, result) {
-            if (err) throw err;
-            console.log("1 record inserted");
-          });
-        });
+      // console.log(childBirthDate);
+        document.location.replace('/children/');
+        // con.connect(function(err) {
+        //   if (err) throw err;
+        //   console.log("Connected!");
+        //   var sql = "INSERT INTO child (name, birthdate) VALUES ?";
+        //   var values = [
+        //     [name, childBirthDate],
+        //   ];
+        //   con.query(sql, function (err, result) {
+        //     if (err) throw err;
+        //     console.log("1 record inserted");
+          // });
+        // });
       } else {
         alert('Failed to create project');
     }
