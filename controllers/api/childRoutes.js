@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
                     attributes: ['id'],
                     where: {
                         //NOTE should be req.session.user_id but testing with hard coded ID for now
-                        id: req.session.user_id
+                        id: req.session.user_id,
                     }
                 }
             ]
@@ -39,8 +39,14 @@ router.get('/', async (req, res) => {
 });
 
 
+
 router.post('/', async (req, res) => {
     try {
+        console.log({...req.body}, `Right Here is right 
+        
+        
+        
+        `);
       const childs = await Child.create({...req.body, user_id: req.session.user_id});
       if (!childs) {
         res.status(404).json({ message: 'No child found with this id!'});

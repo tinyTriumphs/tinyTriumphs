@@ -33,6 +33,7 @@ Child.init(
       references: {
         model: 'user',
         key: 'id',
+        allowNull: false,
       },
       allowNull: false
     },
