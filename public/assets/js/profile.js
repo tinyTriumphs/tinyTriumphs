@@ -31,19 +31,7 @@ const newFormHandler = async (event) => {
 
     if (response.ok) {
       // console.log(childBirthDate);
-        document.location.replace('/children/');
-        // con.connect(function(err) {
-        //   if (err) throw err;
-        //   console.log("Connected!");
-        //   var sql = "INSERT INTO child (name, birthdate) VALUES ?";
-        //   var values = [
-        //     [name, childBirthDate],
-        //   ];
-        //   con.query(sql, function (err, result) {
-        //     if (err) throw err;
-        //     console.log("1 record inserted");
-          // });
-        // });
+        document.location.replace('/api/children');
       } else {
         alert('Failed to create project');
     }
