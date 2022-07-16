@@ -6,15 +6,20 @@ const { Child, devMilestones } = require('../../models');
 //TODO - Render ALL COMPLETED milestones and appointments
 router.get('/', async (req, res) => {
     try {
-        const taDaData = await Development.findAll({
+        const taDaData = await Child.findAll({
             include: [
                 {
-                    model: 
+                    model: devMilestones,
+                    attributes: ['id', 'devMilestone', 'devMilestone_complete', 'devMilestone_expectedDate', 'devMilestone_expectedRange', 'devMilestone_dateComplete', 'child_id'],
+                    where: {
+                        devMilestone_complete: true
+                    }
                 }
             ]
-        })
+        });
+        res.status(200).json(taDaData);
     } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
     }
 });
 
