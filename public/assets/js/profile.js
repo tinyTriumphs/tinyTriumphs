@@ -39,29 +39,29 @@ const newFormHandler = async (event) => {
 };
 
 
-  const delButtonHandler = async (event) => {
-    console.log(event);
-    if (event.target.hasAttribute('data-id')) {
-      const id = event.target.getAttribute('data-id');
-      console.log(id);
+  // const delButtonHandler = async (event) => {
+  //   console.log(event);
+  //   if (event.target.hasAttribute('data-id')) {
+  //     const id = event.target.getAttribute('data-id');
+  //     console.log(id);
   
-      const response = await fetch(`/api/children/${id}`, {
-        method: 'DELETE',
-      });
-      console.log(response);
-      if (response.ok) {
-        document.location.replace('/api/children');
-      } else {
-        alert('Failed to delete child');
-      }
-    }
-  };
+  //     const response = await fetch(`/api/children/${id}`, {
+  //       method: 'DELETE',
+  //     });
+  //     console.log(response);
+  //     if (response.ok) {
+  //       document.location.replace('/api/children');
+  //     } else {
+  //       alert('Failed to delete child');
+  //     }
+  //   }
+  // };
   
   
   document
     .querySelector('.new-child-form')
     .addEventListener('submit', newFormHandler);
   
-  document
-    .querySelector('.project-list')
-    .addEventListener('click', 'clicked to delete child');
+  // document
+  //   .querySelector('.project-list')
+  //   .addEventListener('click', 'clicked to delete child');

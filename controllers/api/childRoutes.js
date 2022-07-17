@@ -117,25 +117,25 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.delete("/:id", async (req, res) => {
-  try {
-    const childData = await Child.destroy({
-      where: {
-        id: req.session.user_id,
-        // id: req.params.id,
-        // user_id: req.session.user_id,
-      },
-    });
+// router.delete("/:id", async (req, res) => {
+//   try {
+//     const childData = await Child.destroy({
+//       where: {
+//         id: req.session.user_id,
+//         // id: req.params.id,
+//         // user_id: req.session.user_id,
+//       },
+//     });
 
-    if (!childData) {
-      res.status(404).json({ message: "No child found with this id!" });
-      return;
-    }
+//     if (!childData) {
+//       res.status(404).json({ message: "No child found with this id!" });
+//       return;
+//     }
 
-    res.status(200).json(childData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+//     res.status(200).json(childData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;
