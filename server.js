@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -7,9 +8,8 @@ const helpers = require('./utils/helpers');
 const multer = require('multer');
 const uuid = require('uuid').v4;
 
-
-
 const sequelize = require('./config/connection');
+const { s3Uploadv2 } = require("./s3Service");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -40,18 +40,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "uploads");
-  },
-  //renaming functionality for storing upload
-   filename: (req, file, cb) => {
-    //destructures name from file type
-    const { originalname } = file;
-    //creates a new randomized id and concatinates with originalname
-    cb(null, `${uuid()}-${originalname}`);
-   }
-})
+//USES LOCAL STORAGE ONLY - NOT NEEDED FOR AWS UPLOADS
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     cb(null, "uploads");
+//   },
+//   //renaming functionality for storing upload
+//    filename: (req, file, cb) => {
+//     //destructures name from file type
+//     const { originalname } = file;
+//     //creates a new randomized id and concatinates with originalname
+//     cb(null, `${uuid()}-${originalname}`);
+//    }
+// })
+
+//Stores file in memory
+const storage = multer.memoryStorage();
 
 //checks to make sure upload is an image file type
 const fileFilter = (req, file, cb) => {
@@ -69,9 +73,14 @@ const upload = multer({
   limits: {fileSize: 1000000} });
 
 //upload functionality on a post request through/upload for a single image
-app.post("/upload", upload.single("image"), (req, res) => {
-  console.log(req.file)
-  res.json({status: "success"}); 
+app.post("/upload", upload.single("image"), async (req, res) => {
+  try {
+    const result = await s3Uploadv2(req.file);
+    console.log(req.file);
+    return res.json({status: "success", result }); 
+  } catch (err) {
+    console.log(err)
+  } 
 });
 
 app.use((error, req, res, next) => {
