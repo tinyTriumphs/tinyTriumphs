@@ -2,6 +2,7 @@
   {{#if childs.length}}
   <div class="col-md-6 project-list">
     <h3>My Children:</h3>
+    
     {{#each childs as |child|}}
     <div class="row mb-2">
       <div class="col-md-8">
@@ -10,6 +11,9 @@
         <li><strong>View My Child: <a href="/api/children/{{child.id}}">Link</a></strong></li>
         <li><strong>TODO - <a href="/api/children/{{child.id}}">Link</a> to Todos</strong></li>
         <li><strong>TODO - <a href="/api/children/{{child.id}}">Link</a> to Tadas</strong></li>
+        <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{child.id}}">DELETE</button>
+      </div>
       </div>
      </div>
 

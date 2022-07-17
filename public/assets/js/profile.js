@@ -35,31 +35,33 @@ const newFormHandler = async (event) => {
       } else {
         alert('Failed to create project');
     }
+  }
+};
+
+
+  const delButtonHandler = async (event) => {
+    console.log(event);
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
+      console.log(id);
+  
+      const response = await fetch(`/api/children/${id}`, {
+        method: 'DELETE',
+      });
+      console.log(response);
+      if (response.ok) {
+        document.location.replace('/api/children');
+      } else {
+        alert('Failed to delete child');
+      }
+    }
   };
   
-  // const delButtonHandler = async (event) => {
-  //   event.preventDefault();
-  //   console.log(event);
-  //   if (event.target.hasAttribute('data-id')) {
-  //     const id = event.target.getAttribute('data-id');
-  // console.log(id);
-  //     const response = await fetch(`/api/projects/${id}`, {
-  //       method: 'DELETE',
-  //     });
-  
-  //     if (response.ok) {
-  //       document.location.replace('/profile');
-  //     } else {
-  //       alert('Failed to delete project');
-  //     }
-  //   }
-  };
   
   document
     .querySelector('.new-child-form')
     .addEventListener('submit', newFormHandler);
   
-  // document
-  //   .querySelector('.new-project-form')
-  //   .addEventListener('click', delButtonHandler);
-    // .addEventListener('click', delButtonHandler);
+  document
+    .querySelector('.project-list')
+    .addEventListener('click', 'clicked to delete child');
