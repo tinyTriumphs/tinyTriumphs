@@ -127,7 +127,7 @@ router.delete("/:id", async (req, res) => {
         user_id: req.session.user_id,
       },
     });
-
+console.log(childData);
     if (!childData) {
       res.status(404).json({ message: "No child found with this id!" });
       return;
