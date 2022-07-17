@@ -4,6 +4,10 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const multer = require('multer');
+const uuid = require('uuid').v4;
+
+
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -35,6 +39,63 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "uploads");
+  },
+  //renaming functionality for storing upload
+   filename: (req, file, cb) => {
+    //destructures name from file type
+    const { originalname } = file;
+    //creates a new randomized id and concatinates with originalname
+    cb(null, `${uuid()}-${originalname}`);
+   }
+})
+
+//checks to make sure upload is an image file type
+const fileFilter = (req, file, cb) => {
+  if (file.mimetype.split('/')[0] === 'image') {
+    cb(null, true)
+  } else {
+    cb(new multer.MulterError("LIMIT_UNEXPECTED_FILE"), false);
+  }
+};
+
+const upload = multer({
+  storage, 
+  fileFilter, 
+  //limits file size to 1MB
+  limits: {fileSize: 1000000} });
+
+//upload functionality on a post request through/upload for a single image
+app.post("/upload", upload.single("image"), (req, res) => {
+  console.log(req.file)
+  res.json({status: "success"}); 
+});
+
+app.use((error, req, res, next) => {
+  //multer error return for file size
+  if (error instanceof multer.MulterError) {
+    if (error.code === "LIMIT_FILE_SIZE") {
+      return res.status(400).json({
+        message: "file is too large"
+      })
+    }
+    //error for file count limit exceeding 1 file
+    if (error.code === "LIMIT_FILE_COUNT") {
+      return res.status(400).json({
+        message: "More than one file selected"
+      })
+    }
+    //error for unexpected file type
+    if (error.code === "LIMIT_UNEXPECTED_FILE") {
+      return res.status(400).json({
+        message: "File must be an image"
+      })
+    }
+  };
+})
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));
