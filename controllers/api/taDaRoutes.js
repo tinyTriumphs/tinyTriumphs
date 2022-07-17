@@ -28,6 +28,9 @@ router.get('/', async (req, res) => {
 router.get('/:user_id', withAuth, async (req, res) => {
     try {
         const tadaData = await Child.findAll({
+            where: {
+                user_id: req.session.user_id
+            },
             include: [
                 {
                     model: devMilestones,
