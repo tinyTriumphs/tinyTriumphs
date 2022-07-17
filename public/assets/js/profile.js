@@ -17,8 +17,7 @@ const newFormHandler = async (event) => {
     //   const time = d.toTimeString().split(' ')[0];
     //   return `${date} ${time}`};
 
-    if (name && childBirthDate
-      ) {
+    if (name && childBirthDate) {
       const response = await fetch(`/api/children`, {
         method: 'POST',
         body: JSON.stringify({ name, birthdate: childBirthDate
@@ -33,7 +32,7 @@ const newFormHandler = async (event) => {
       // console.log(childBirthDate);
         document.location.replace('/api/children');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create child');
     }
   }
 };
