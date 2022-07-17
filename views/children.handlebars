@@ -1,6 +1,6 @@
 <div class="text-center">
-  {{#if childs.length}}
   <div class="col-md-6 project-list">
+  {{#if childs.length}}
     <h3>My Children:</h3>
     {{#each childs as |child|}}
     <div class="row mb-2">
@@ -16,11 +16,11 @@
      <p>---</p>
     </div>
     {{/each}}
-  </div>
   {{else}}
   You don't currently have any children!
   <br>TODO <a href="#">Add a child</a>
   {{/if}}
+  </div>
 </div>
 
-<script src="assets/js/profile.js"></script>
+{{!-- <script src="assets/js/profile.js"></script> --}}

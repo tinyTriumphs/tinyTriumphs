@@ -1,8 +1,51 @@
 header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
-  
-  .no-button {
+
+  a {
+    color: #6f42c1;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: x-large;
+    color: #6f42c1;
+  }
+
+  h2 {
+    font-weight: 300;
+    font-size: large;
+    color: #6f42c1;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .bg-header {
+    background-color:#6f42c1 ;
+  }
+
+  .icon-cog {
+    color: white;
+  }
+
+  .icon-cog-body {
+    color: #6f42c1;
+  }
+
+  .btn-custom {
+    font-weight: 300;
+    font-size: large;
+    color: #6f42c1;
+  }
+  /* .no-button {
     background: none;
     border: none;
     padding: 0;
@@ -15,11 +58,11 @@ header, .project:not(:last-child) {
   .no-button:hover {
     color: #065b83;
     text-decoration: underline;
-  }
+  } */
   
-  .dollar-amount {
-    color: #056605;
-    font-weight: bold;
-    margin-left: -5px;
+  .logo {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2rem;
+    color: white;
   }
   
