@@ -22,6 +22,19 @@ Child.init(
       allowNull: false,
       // defaultValue: DataTypes.NOW,
     },
+    gender: {
+      // type: DataTypes.ENUM,
+      // allowNull: false,
+      //value: ['male', 'female', 'other'],
+      type: DataTypes.STRING,
+      validate: {
+        isIn: [[
+         'female',
+         'male',
+         'other'
+        ]],
+       }
+    },
     //Do we need to keep this?
     date_created: {
       type: DataTypes.DATE,
