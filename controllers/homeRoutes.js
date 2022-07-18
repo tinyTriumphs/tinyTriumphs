@@ -19,6 +19,14 @@ router.get('/', async (req, res) => {
 });
 
 // TODO: Tom
+// creating a counter for total # of dev and med TADAs completed by all user's children
+router.get('/', async (req, res) => {
+  try {
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
