@@ -24,8 +24,9 @@ Child.init(
     },
     gender: {
       // type: DataTypes.ENUM,
-      type: DataTypes.STRING,
       // allowNull: false,
+      //value: ['male', 'female', 'other'],
+      type: DataTypes.STRING,
       validate: {
         isIn: [[
          'female',

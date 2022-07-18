@@ -9,7 +9,7 @@ const newFormHandler = async (event) => {
     console.log(name);
     const childBirthDate = document.querySelector('#child-birthdate').value.trim();
     console.log(childBirthDate);
-    const gender = document.querySelector('input[child-gender]:checked').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
     console.log(gender);
 
     // const formatedTimestamp = ()=> {
