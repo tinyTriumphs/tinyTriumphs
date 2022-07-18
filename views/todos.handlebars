@@ -1,0 +1,28 @@
+<div class="text-center">
+  <div>
+  {{#if childs.length}}
+    <h1><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;ToDos</h1>
+    <h2>Select your Child:</h2>
+    {{!-- <div id ="newid">
+    <button class="newclass" type="button">My button</button>
+    </div> --}}
+    <div class="row id" id="newid">
+      {{#each childs as |child|}}
+      <div class="card">
+        <a href="/api/todos/{{child.id}}" class="btn btn-light">
+        <img src="{{child.profileImage}}" class="card">
+        <i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{child.name}}</a>
+     </div>
+      {{/each}}
+    </div>
+  {{else}}
+  You don't currently have any children!
+
+   <a href="/profile" class="btn btn-light btn-custom"><i class="fa fa-child icon-cog-body" aria-hidden="true"></i>&nbsp;Add a child from your profile</a>
+  {{/if}}
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="/assets/js/momentjs.js"></script>
