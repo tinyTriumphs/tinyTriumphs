@@ -13,7 +13,6 @@ router.get("/", withAuth, async (req, res) => {
           model: User,
           attributes: ["id"],
           where: {
-            //NOTE should be req.session.user_id but testing with hard coded ID for now
             id: req.session.user_id,
           },
         },
