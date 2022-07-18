@@ -2,21 +2,25 @@
     {
         "name": "Little Smith",
         "birthdate": "2022-01-10",
+        "gender": "male",
         "user_id": 1 
     },
     {
         "name": "Even Smaller Smith",
         "birthdate": "2022-03-28",
+        "gender":"male",
         "user_id": 1
     },
     {
         "name": "Tiny Green",
         "birthdate": "2021-10-03",
+        "gender": "other",
         "user_id": 2    
     },
     {
         "name": "Bitty DeSantos",
         "birthdate": "2020-12-09",
+        "gender": "female",
         "user_id": 3 
     }
 ]

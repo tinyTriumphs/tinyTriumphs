@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const { User, Child, devMilestones, medMilestones } = require("../../models");
+const withAuth = require('../../utils/auth');
 
 //Get all associated children to user
 //TODO currently gets all children in the database; want to get all children associated w/ User ID
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   try {
     //Finds all children associated w/ logged in user id
     const childData = await Child.findAll({
@@ -12,7 +13,6 @@ router.get("/", async (req, res) => {
           model: User,
           attributes: ["id"],
           where: {
-            //NOTE should be req.session.user_id but testing with hard coded ID for now
             id: req.session.user_id,
           },
         },
@@ -41,7 +41,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
   try {
     console.log(
       { ...req.body },
@@ -66,7 +66,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", withAuth, async (req, res) => {
   try {
     //Finds all children associated w/ logged in user id
     const childData = await Child.findByPk(req.params.id, {
@@ -119,7 +119,7 @@ router.get("/:id", async (req, res) => {
 
 // TODO: KALUKI delete child
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
     const childData = await Child.destroy({
       where: {
@@ -127,7 +127,7 @@ router.delete("/:id", async (req, res) => {
         user_id: req.session.user_id,
       },
     });
-
+console.log(childData);
     if (!childData) {
       res.status(404).json({ message: "No child found with this id!" });
       return;

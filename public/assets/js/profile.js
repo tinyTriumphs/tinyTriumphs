@@ -9,7 +9,8 @@ const newFormHandler = async (event) => {
     console.log(name);
     const childBirthDate = document.querySelector('#child-birthdate').value.trim();
     console.log(childBirthDate);
-    // const gender = document.querySelector('input[child-gender]:checked').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    console.log(gender);
 
     // const formatedTimestamp = ()=> {
     //   const d = new Date()
@@ -17,10 +18,10 @@ const newFormHandler = async (event) => {
     //   const time = d.toTimeString().split(' ')[0];
     //   return `${date} ${time}`};
 
-    if (name && childBirthDate) {
+    if (name && childBirthDate && gender) {
       const response = await fetch(`/api/children`, {
         method: 'POST',
-        body: JSON.stringify({ name, birthdate: childBirthDate
+        body: JSON.stringify({ name, birthdate: childBirthDate, gender
         }),
         headers: {
           'Content-Type': 'application/json',
