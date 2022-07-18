@@ -20,3 +20,21 @@
 //     }
 //   },
 // };
+
+// const handlebarsHelper = Handlebars.registerHelper('objToList', function(context) {
+//     function toList(obj, indent) {
+//       var res=""
+//       for (var k in obj) { 
+//           if (obj[k] instanceof Object) {
+//               res=res+k+"\n"+toList(obj[k], ("   " + indent)) ;
+//           }
+//           else{
+//               res=res+indent+k+" : "+obj[k]+"\n";
+//           }
+//       }
+//       return res;
+//     }    
+//     return toList(context,"");
+//   });
+
+// module.exports = handlebarsHelper;
