@@ -10,7 +10,7 @@
         <div class="col-sm-4">
           <div class="card">
             {{!-- <img src="" class="card-img-top" alt="..."> --}}
-            <img src="https://tinytriumphs-upload.s3.amazonaws.com/uploads/781a208f-5d65-4fe0-b4d5-bed125b185da-placeholderbabyimage.jpg" class="card-img-top" alt="{{child.name}} photo" id="imgid">
+            <img src="{{child.profileImage}}" class="card-img-top" alt="{{child.name}} photo" id="imgid">
             
 <button class="btn btn-light newclass" type="button" data-toggle="collapse" data-target="#addChild" aria-expanded="false" aria-controls="collapseExample">
     <i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp;Upload Profile Photo
@@ -26,9 +26,10 @@
     </form>  </div>
 </div>
             <div class="card-body">
-              <h2 class="card-title"><strong>{{child.name}}</strong></h5>
+              <h2 class="card-title"><strong>{{child.name}}</strong></h5><br>  
               <p class="card-text">
                 Born on <strong class="child-date">{{child.birthdate}}</strong>
+                <br>Sex: {{child.gender}}
               </p>
               <a href="/api/children/{{child.id}}" class="btn btn-light"><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;ToDos</a>
               <a href="/api/children/{{child.id}}" class="btn btn-light"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDas</a>
