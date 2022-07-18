@@ -10,6 +10,7 @@ const uuid = require('uuid').v4;
 
 const sequelize = require('./config/connection');
 const { s3Uploadv2 } = require("./s3Service");
+const { Child } = require("./models");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
@@ -76,11 +77,22 @@ const upload = multer({
 app.post("/upload", upload.single("image"), async (req, res) => {
   try {
     const result = await s3Uploadv2(req.file);
-    console.log(req.file);
-    return res.json({status: "success", result }); 
+    const newProfileImage = result.Location;
+    //updates the child profile image url in the db
+    Child.update({
+      profileImage: newProfileImage,
+    },
+    {
+      where: {
+        //needs to reference child id req.params.id
+        //currently hard coded
+        id: 6,
+      }
+    })
+    return res.json({status: "success", result });
   } catch (err) {
     console.log(err)
-  } 
+  }
 });
 
 app.use((error, req, res, next) => {
