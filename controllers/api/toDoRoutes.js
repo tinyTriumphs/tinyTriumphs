@@ -56,7 +56,14 @@ router.get('/:id', async (req, res) => {
             ],
         }
         );
-        res.status(200).json(toDoData);
+        const childToDos = toDoData.get({ plain: true });
+
+        console.log(childToDos);
+        res.render("childidtodos", {
+            ...childToDos,
+            logged_in: true,
+          });
+
     } catch (err) {
     res.status(500).json(err);
     }

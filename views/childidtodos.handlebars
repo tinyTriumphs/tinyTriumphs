@@ -1,4 +1,4 @@
-    <h1><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;Tadas for {{name}}</h1>
+    <h1><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;ToDos for {{name}}</h1>
         <h2>Developmental Milestones</h2>
         {{#if devMilestones.length}}
         
@@ -6,16 +6,16 @@
             <thead>
                 <tr>
                     <th scope="col">Milestone</th>
-                    <th scope="col">Date Completed</th>
+                    <th scope="col">Anticipated Age Range</th>
                     <th scope="col">Update</th>
                 </tr>
             </thead>
             <tbody>
             {{#each devMilestones as |devMilestone|}}
                 <tr>
-                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
-                    <td>{{devMilestone.devMilestone_dateComplete}}</td>
-                    <td>Update</td>
+                    <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
+                    <td>{{devMilestone.devMilestone_expectedRange}}</td>
+                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;Mark as TaDa</td>
             {{/each}}
         </table>
         {{/if}}
@@ -28,16 +28,16 @@
             <thead>
                 <tr>
                     <th scope="col">Milestone</th>
-                    <th scope="col">Date Completed</th>
+                    <th scope="col">Anticipated Appointment Date</th>
                     <th scope="col">Update</th>
                 </tr>
             </thead>
             <tbody>
             {{#each medMilestones as |medMilestone|}}
                 <tr>
-                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
-                    <td>{{medMilestone.medMilestone_dateComplete}}</td>
-                    <td>Update</td>
+                    <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
+                    <td>{{medMilestone.medMilestone_ToDoDate}}</td>
+                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;Mark as TaDa</td>
             {{/each}}
         </table>
 
