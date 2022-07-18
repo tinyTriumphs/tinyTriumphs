@@ -12,11 +12,6 @@ const newFormHandler = async (event) => {
     const gender = document.querySelector('input[name="gender"]:checked').value;
     console.log(gender);
 
-    // const formatedTimestamp = ()=> {
-    //   const d = new Date()
-    //   const date = d.toISOString().split('T')[0];
-    //   const time = d.toTimeString().split(' ')[0];
-    //   return `${date} ${time}`};
 
     if (name && childBirthDate && gender) {
       const response = await fetch(`/api/children`, {
