@@ -1,4 +1,5 @@
     <h1><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;ToDos for {{name}}</h1>
+        
         <h2>Developmental Milestones</h2>
         {{#if devMilestones.length}}
         
@@ -15,7 +16,32 @@
                 <tr>
                     <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
                     <td>{{devMilestone.devMilestone_expectedRange}}</td>
-                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;Mark as TaDa</td>
+                    <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#devModal{{devMilestone.id}}"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</button></td>
+                    {{!-- DEV MILESTONE MODAL STARTS HERE --}}
+                    <div class="modal fade" id="devModal{{devMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">{{devMilestone.devMilestone}}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            {{!-- UPDATE DEV MILESEONE MODAL HERE --}}
+                            <div class="modal-body">
+                                <form class="form update-dev-milestone-form">
+                                    <div class="form-group">
+                                        <label for="dev-milestone">When did your child complete this milestone?</label>
+                                        <input class="form-input" type="date" id="dev-milestone" name="dev-milestone" />
+                                    </div>
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark">Save changes</button>
+                            </div>
+                            </div>
+                        </div>
+                     </div>
             {{/each}}
         </table>
         {{/if}}
@@ -37,7 +63,32 @@
                 <tr>
                     <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
                     <td>{{medMilestone.medMilestone_ToDoDate}}</td>
-                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;Mark as TaDa</td>
+                    <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#medModal{{medMilestone.id}}"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</button></td>
+                    {{!-- MED MILESTONE MODAL STARTS HERE --}}
+                    <div class="modal fade" id="medModal{{medMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">{{medMilestone.medMilestone}}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            {{!-- UPDATE MED MILESEONE MODAL HERE --}}
+                            <div class="modal-body">
+                                <form class="form update-med-milestone-form">
+                                    <div class="form-group">
+                                        <label for="med-milestone">When did your child complete this milestone?</label>
+                                        <input class="form-input" type="date" id="med-milestone" name="med-milestone" />
+                                    </div>
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark">Save changes</button>
+                            </div>
+                            </div>
+                        </div>
+                     </div>
             {{/each}}
         </table>
 
