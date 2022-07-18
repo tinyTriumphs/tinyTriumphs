@@ -9,36 +9,26 @@ const { User, devMilestones, medMilestones } = require('../models');
 // TODO: Alex
 router.get('/', async (req, res) => {
   try {
-    res.render('homepage', { 
-      // projects, 
-      logged_in: req.session.logged_in 
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// TODO: Tom
-// creating a counter for total # of dev and med TADAs completed by all user's children
-router.get('/', async (req, res) => {
-  try {
+    // creating a counter for total # of dev and med TADAs completed by all user's children
     const devcount = await devMilestones.count({
-
+      where: { devMilestone_complete: true },
     });
     console.log(devcount);
     const medcount = await medMilestones.count({
-
+      where: { medMilestone_complete: true },
     });
     console.log(medcount);
-
-    res.render('homepage', {
+    
+    res.render('homepage', { 
+      // projects, 
+      logged_in: req.session.logged_in,
       devcount,
       medcount
     });
   } catch (err) {
     res.status(500).json(err);
   }
-})
+});
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
