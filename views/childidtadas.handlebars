@@ -1,35 +1,47 @@
-<div class="card text-center">
-<img class="card-img-top" src="{{profileImage}}" alt="Photo of {{name}}">
-
-<h1>{{name}}</h1>
-  <div>
-    <h2>Profile Information</h2>
-
-    <div class="card"><p>
-
-        Name: <strong>{{name}}</strong><br>
-        Birthdate: <strong class="single-child-date">{{birthdate}}</strong>
-        {{#each devMilestones as |devMilestone|}}
-        <li>{{devMilestone.devMilestone}}: Completed on {{devMilestone.devMilestone_dateComplete}}</li>
-        {{/each}}
-    </p>
+    <h1>Tadas for {{name}}</h1>
+        <h2>Developmental Milestones</h2>
+        {{#if devMilestones.length}}
         
-        <button class="btn btn-light newclass" type="button" data-toggle="collapse" data-target="#uploadPhoto" aria-expanded="false" aria-controls="collapseExample">
-        <i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp;Upload Profile Photo
-        </button>
-        <div class="collapse" id="uploadPhoto">
-          <div class="card card-body">
-            <form class="form new-child-form">
-              <div class="form-group">
-                <input type="file" id="input" /> 
-                <button type="submit" class="btn btn-dark" id="photo-upload">Submit</button>
-              </div>
-            </form>  
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Milestone</th>
+                    <th scope="col">Date Completed</th>
+                    <th scope="col">Update</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each devMilestones as |devMilestone|}}
+                <tr>
+                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
+                    <td>{{devMilestone.devMilestone_dateComplete}}</td>
+                    <td>Update</td>
+            {{/each}}
+        </table>
+        {{/if}}
+
+        {{#if medMilestones.length}}
+
+        <h2>Medical Milestones</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Milestone</th>
+                    <th scope="col">Date Completed</th>
+                    <th scope="col">Update</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each medMilestones as |medMilestone|}}
+                <tr>
+                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
+                    <td>{{medMilestone.medMilestone_dateComplete}}</td>
+                    <td>Update</td>
+            {{/each}}
+        </table>
+
+        {{/if}}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/assets/js/momentjs.js"></script>
