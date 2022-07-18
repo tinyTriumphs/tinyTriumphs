@@ -25,7 +25,7 @@ medMilestones.init(
       },
     //NEW FIELD - when the procedure/appointment is recommended to occur
     medMilestone_ToDoDate: {
-        type: DataTypes.DATE,
+      type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
