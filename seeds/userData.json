@@ -13,5 +13,10 @@
         "name": "Gina DeSantos",
         "email": "gds@gmail.com",
         "password": "password12345"
+    },
+    {
+        "name": "Eric Kim",
+        "email": "ekim@hotmail.com",
+        "password": "password12345"
     }
 ]
