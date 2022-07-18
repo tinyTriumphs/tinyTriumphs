@@ -9,7 +9,8 @@ const newFormHandler = async (event) => {
     console.log(name);
     const childBirthDate = document.querySelector('#child-birthdate').value.trim();
     console.log(childBirthDate);
-    // const gender = document.querySelector('input[child-gender]:checked').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    console.log(gender);
 
     // const formatedTimestamp = ()=> {
     //   const d = new Date()
@@ -17,11 +18,10 @@ const newFormHandler = async (event) => {
     //   const time = d.toTimeString().split(' ')[0];
     //   return `${date} ${time}`};
 
-    if (name && childBirthDate
-      ) {
+    if (name && childBirthDate && gender) {
       const response = await fetch(`/api/children`, {
         method: 'POST',
-        body: JSON.stringify({ name, birthdate: childBirthDate
+        body: JSON.stringify({ name, birthdate: childBirthDate, gender
         }),
         headers: {
           'Content-Type': 'application/json',
@@ -33,33 +33,35 @@ const newFormHandler = async (event) => {
       // console.log(childBirthDate);
         document.location.replace('/api/children');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create child');
     }
-  };
-  
+  }
+};
+
+
   // const delButtonHandler = async (event) => {
-  //   event.preventDefault();
   //   console.log(event);
   //   if (event.target.hasAttribute('data-id')) {
   //     const id = event.target.getAttribute('data-id');
-  // console.log(id);
-  //     const response = await fetch(`/api/projects/${id}`, {
+  //     console.log(id);
+  
+  //     const response = await fetch(`/api/children/${id}`, {
   //       method: 'DELETE',
   //     });
-  
+  //     console.log(response);
   //     if (response.ok) {
-  //       document.location.replace('/profile');
+  //       document.location.replace('/api/children');
   //     } else {
-  //       alert('Failed to delete project');
+  //       alert('Failed to delete child');
   //     }
   //   }
-  };
+  // };
+  
   
   document
     .querySelector('.new-child-form')
     .addEventListener('submit', newFormHandler);
   
   // document
-  //   .querySelector('.new-project-form')
-  //   .addEventListener('click', delButtonHandler);
-    // .addEventListener('click', delButtonHandler);
+  //   .querySelector('.project-list')
+  //   .addEventListener('click', 'clicked to delete child');

@@ -1,15 +1,51 @@
 <div class="row">
+  <img src="https://tinytriumphs-upload.s3.us-east-2.amazonaws.com/uploads/697c0b48-bf66-447e-acc2-22b1aebe59a4-babysampleimg.jpg" class="img-fluid" alt="Responsive image">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h1>Welcome, {{name}}!</h1>
+    <h2>What should we <strong>celebrate</strong> today?</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>User Information:</h3>
-    <p>My id is {{id}} and my email is {{email}}.</p>
+    {{!-- <h3></h3>
+    <p>My id is {{id}} and my email is {{email}}.</p> --}}
 
-    <h4>Add a new Child to your profile here!</h4>
+<p>
+  <a href="/" class="btn btn-light btn-custom"><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;View Upcoming ToDos</a>
+  <a href="/" class="btn btn-light btn-custom"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;View Recent TaDas</a>
+  <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#addChild" aria-expanded="false" aria-controls="collapseExample">
+    <h2><i class="fa fa-child icon-cog-body" aria-hidden="true"></i>&nbsp;Add a New Child</h2>
+  </button>
+</p>
+<div class="collapse" id="addChild">
+  <div class="card card-body">
+<h2>
+    <form class="form new-child-form">
+      <div class="form-group">
+        <label for="child-name">Your Child's Name:</label>
+        <input class="form-input" type="text" id="child-name" name="child-name" />
+      </div>
+      <div class="form-group">
+        <label for="child-birthdate">Your Child's Birthdate:</label>
+        <input class="form-input" type="date" id="child-birthdate" name="child-birthdate" />
+      </div>
+      <div class="form-group">
+        Sex Assigned at Birth:<br>
+        <input type="radio" id="female" name="gender" value="female">
+        Female
+        <input type="radio" id="male" name="gender" value="male">
+        Male
+        <input type="radio" id="other" name="gender" value="other">
+        Other
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </div>
+    </form>  </div>
+</div>
+
+    {{!-- <h2><i class="fa fa-child icon-cog-body" aria-hidden="true"></i>&nbsp;Add a New Child</h2>
     <form class="form new-child-form">
       <div class="form-group">
         <label for="child-name">Your Child's Name:</label>
@@ -27,12 +63,12 @@
         Male
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-dark">Submit</button>
       </div>
     </form>
-  </div>
+  </div> --}}
 
-  {{#if projects.length}}
+  {{!-- {{#if projects.length}}
   <div class="col-md-6 project-list">
     <h3>Current Projects:</h3>
 
@@ -47,7 +83,7 @@
     </div>
     {{/each}}
   </div>
-  {{/if}}
+  {{/if}} --}}
 </div>
 
 <script src="assets/js/profile.js"></script>
