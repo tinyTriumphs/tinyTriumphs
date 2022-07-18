@@ -1,11 +1,30 @@
 <div class="text-center">
-  <div class="col-md-6 project-list">
+  <div>
   {{#if childs.length}}
-    <h3>My Children:</h3>
+    <h1>My Children</h1>
 
-    {{#each childs as |child|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
+    <div class="row">
+      {{#each childs as |child|}}
+        <div class="col-sm-6">
+          <div class="card">
+            {{!-- <img src="" class="card-img-top" alt="..."> --}}
+            <img src="https://tinytriumphs-upload.s3.amazonaws.com/uploads/781a208f-5d65-4fe0-b4d5-bed125b185da-placeholderbabyimage.jpg" class="card-img-top" alt="{{child.name}} photo">
+            <input type="file" />
+            <div class="card-body">
+              <h2 class="card-title"><strong>{{child.name}}</strong></h5>
+              <p class="card-text">
+                Born on <strong class="child-date">{{child.birthdate}}</strong>
+              </p>
+              <a href="/api/children/{{child.id}}" class="btn btn-light"><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;ToDos</a>
+              <a href="/api/children/{{child.id}}" class="btn btn-light"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDas</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+
+      {{!-- <div class="col-md-8">
         <li><strong>Name:</strong> {{child.name}}</li>
         <li><strong>Birthday:</strong> {{child.birthdate}}</li>
         <li><strong>View My Child: <a href="/api/children/{{child.id}}">Link</a></strong></li>
@@ -15,17 +34,17 @@
         {{!-- <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{child.id}}">DELETE</button> --}}
       {{!-- </div> --}}
-      </div>
-     </div>
-
-     <p>---</p>
-    </div>
-    {{/each}}
+      {{!-- </div> --}}
   {{else}}
   You don't currently have any children!
-  <br>TODO <a href="#">Add a child</a>
+
+   <a href="/profile" class="btn btn-light btn-custom"><i class="fa fa-child icon-cog-body" aria-hidden="true"></i>&nbsp;Add a child from your profile</a>
   {{/if}}
   </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="../assets/js/momentjs.js"></script>
 
 {{!-- <script src="assets/js/profile.js"></script> --}}
