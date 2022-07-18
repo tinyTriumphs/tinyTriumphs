@@ -29,11 +29,11 @@ Child.init(
       type: DataTypes.STRING,
       validate: {
         isIn: [[
-         'female',
-         'male',
-         'other'
+        'female',
+        'male',
+        'other'
         ]],
-       }
+      }
     },
     profileImage: {
       type: DataTypes.STRING,
