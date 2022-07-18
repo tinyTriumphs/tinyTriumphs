@@ -1,14 +1,36 @@
-<div class="text-center">
-<h2>{{name}}</h2>
-  <div class="col-md-6 project-list">
-    <h3>I have a child!</h3>
-    <div class="row mb-2">
-        <li>Name: {{name}}</li>
-        <li>Birthdate: {{birthdate}}</li>
-        <li>(TODO)<a href="#">{{name}}'s ToDos</a></li>
-        <li>(TODO)<a href="#">{{name}}'s TaDas</a></li>
-    </div>
+<div class="card text-center">
+<img class="card-img-top" src="{{profileImage}}" alt="Photo of {{name}}">
 
+<h1>{{name}}</h1>
+  <div>
+    <h2>Profile Information</h2>
+
+    <div class="card"><p>
+
+        Name: <strong>{{name}}</strong><br>
+        Birthdate: <strong class="single-child-date">{{birthdate}}</strong>
+        {{#each devMilestones as |devMilestone|}}
+        <li>{{devMilestone.devMilestone}}: Completed on {{devMilestone.devMilestone_dateComplete}}</li>
+        {{/each}}
+    </p>
+        
+        <button class="btn btn-light newclass" type="button" data-toggle="collapse" data-target="#uploadPhoto" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp;Upload Profile Photo
+        </button>
+        <div class="collapse" id="uploadPhoto">
+          <div class="card card-body">
+            <form class="form new-child-form">
+              <div class="form-group">
+                <input type="file" id="input" /> 
+                <button type="submit" class="btn btn-dark" id="photo-upload">Submit</button>
+              </div>
+            </form>  
+          </div>
+        </div>
     </div>
   </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="/assets/js/momentjs.js"></script>
+{{!-- <script src="/assets/utils/helpers.js"></script> --}}
