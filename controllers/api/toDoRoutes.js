@@ -28,13 +28,38 @@ router.get('/', async (req, res) => {
 
 //TODO - UPDATE milestone by it's ID
 //IF marked 'complete' then move to TaDas
-router.post('/:id', async (req, res) => {
+// router.post('/:id', async (req, res) => {
+//     try {
+
+//     } catch (err) {
+//         res.status(500).json(err);
+//     }
+// })
+
+// TODO null conditional (if one field is null the entire return is null?)
+router.get('/:id', async (req, res) => {
     try {
-
+        const toDoData = await Child.findByPk(req.params.id, {
+            include: [
+                {
+                    model: devMilestones,
+                    where: {
+                        devMilestone_complete: false
+                    }
+                },
+                {
+                    model: medMilestones,
+                    where: {
+                        medMilestone_complete: false
+                    }
+                }
+            ],
+        }
+        );
+        res.status(200).json(toDoData);
     } catch (err) {
-        res.status(500).json(err);
+    res.status(500).json(err);
     }
-})
-
+});
 
 module.exports = router;

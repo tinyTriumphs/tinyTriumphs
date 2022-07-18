@@ -4,7 +4,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-const helpers = require('./utils/helpers');
+// const helpers = require('./utils/helpers');
 const multer = require('multer');
 const uuid = require('uuid').v4;
 
@@ -17,7 +17,28 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ 
+  helpers: {
+    objToList: function(context) {
+      function toList(obj, indent) {
+        var res=""
+        for (var k in obj) { 
+            if (obj[k] instanceof Object) {
+                res=res+k+"\n"+toList(obj[k], ("   " + indent)) ;
+            }
+            else{
+                res=res+indent+k+" : "+obj[k]+"\n";
+            }
+        }
+        return res;
+      }    
+      return toList(context,"");
+    },
+    json: function(context) {
+      return JSON.stringify(context);
+    }
+  }
+ });
 
 const sess = {
   secret: 'Super secret secret',
