@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const withAuth = require('../utils/auth');
-const { User } = require('../models');
+const { User, devMilestones, medMilestones } = require('../models');
 
 /////SAMPLE FROM MINI PROJECT/////
 // const { Project, User } = require('../models');
@@ -22,7 +22,19 @@ router.get('/', async (req, res) => {
 // creating a counter for total # of dev and med TADAs completed by all user's children
 router.get('/', async (req, res) => {
   try {
+    const devcount = await devMilestones.count({
 
+    });
+    console.log(devcount);
+    const medcount = await medMilestones.count({
+
+    });
+    console.log(medcount);
+
+    res.render('homepage', {
+      devcount,
+      medcount
+    });
   } catch (err) {
     res.status(500).json(err);
   }
