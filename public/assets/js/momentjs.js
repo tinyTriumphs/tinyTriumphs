@@ -1,3 +1,5 @@
+//converts child's birthdate formate to Month, DD YYYY
+//for children.handlebars
 const childDate = document.querySelectorAll(".child-date");
 console.log(childDate);
 

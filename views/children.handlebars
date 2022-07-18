@@ -2,14 +2,29 @@
   <div>
   {{#if childs.length}}
     <h1>My Children</h1>
-
-    <div class="row">
+    {{!-- <div id ="newid">
+    <button class="newclass" type="button">My button</button>
+    </div> --}}
+    <div class="row id" id="newid">
       {{#each childs as |child|}}
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <div class="card">
             {{!-- <img src="" class="card-img-top" alt="..."> --}}
-            <img src="https://tinytriumphs-upload.s3.amazonaws.com/uploads/781a208f-5d65-4fe0-b4d5-bed125b185da-placeholderbabyimage.jpg" class="card-img-top" alt="{{child.name}} photo">
-            <input type="file" />
+            <img src="https://tinytriumphs-upload.s3.amazonaws.com/uploads/781a208f-5d65-4fe0-b4d5-bed125b185da-placeholderbabyimage.jpg" class="card-img-top" alt="{{child.name}} photo" id="imgid">
+            
+<button class="btn btn-light newclass" type="button" data-toggle="collapse" data-target="#addChild" aria-expanded="false" aria-controls="collapseExample">
+    <i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp;Upload Profile Photo
+  </button>
+</p>
+<div class="collapse" id="addChild">
+  <div class="card card-body">
+<h2>
+    <form class="form new-child-form">
+      <div class="form-group">
+        <input type="file" /> <button type="submit" class="btn btn-dark" id="photo-upload">Submit</button>
+      </div>
+    </form>  </div>
+</div>
             <div class="card-body">
               <h2 class="card-title"><strong>{{child.name}}</strong></h5>
               <p class="card-text">
@@ -46,5 +61,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="../assets/js/momentjs.js"></script>
+<script src="../assets/js/photo.js"></script>
+
 
 {{!-- <script src="assets/js/profile.js"></script> --}}
