@@ -38,11 +38,13 @@ const hbs = exphbs.create({
       return JSON.stringify(context);
     }
   }
- });
+});
 
 const sess = {
   secret: 'Super secret secret',
-  cookie: {},
+  cookie: {
+    maxAge: 86400,
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
