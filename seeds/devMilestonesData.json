@@ -1,10 +1,10 @@
 [
     {
         "devMilestone": "First Tooth",
-        "devMilestone_complete": true,
-        "devMilestone_expectedDate": "2022-10-01",
+        "devMilestone_complete": false,
+        "devMilestone_expectedDate": "2022-11-18",
         "devMilestone_expectedRange": "3 to 6 months",
-        "devMilestone_dateComplete": "2022-10-31",
+        "devMilestone_dateComplete": null,
         "child_id": 1 
     },
     {
@@ -62,5 +62,53 @@
         "devMilestone_expectedRange": "12 to 13 Months",
         "devMilestone_dateComplete": "2021-12-01",
         "child_id": 4
+    },
+    {
+        "devMilestone": "Calms down when spoken to or picked up",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-08-18",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2022-07-01",
+        "child_id": 1 
+    },
+    {
+        "devMilestone": "Looks at your face",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-08-18",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2022-07-29",
+        "child_id": 1 
+    },
+    {
+        "devMilestone": "Smiles when you talk to or smile at them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-08-18",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2022-06-03",
+        "child_id": 1 
+    },
+    {
+        "devMilestone": "Reacts to loud sounds",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-08-18",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2022-06-20",
+        "child_id": 1 
+    },
+    {
+        "devMilestone": "Watches you as you move",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-08-18",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2022-07-18",
+        "child_id": 1 
+    },
+    {
+        "devMilestone": "Holds head up when on tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-08-18",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2022-07-01",
+        "child_id": 1 
     }
 ]
