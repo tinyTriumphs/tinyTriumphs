@@ -125,6 +125,9 @@
         "medMilestone_dateComplete": "2017-08-14",
         "child_id": 5
     },
+
+
+
     {
         "medMilestone": "VAR (Varicella)",
         "medMilestone_complete": true,
@@ -150,7 +153,7 @@
         "medMilestone": "Dtap (Diphtheria, Tetanus, & Acellular Pertussis)",
         "medMilestone_complete": true,
         "medMilestone_ToDoDate": "2016-09-15",
-        "medMilestone_dateComplete": "2016-09-150",
+        "medMilestone_dateComplete": "2016-09-15",
         "child_id": 5
     },
     {
