@@ -22,7 +22,11 @@ const newFormHandler = async (event) => {
           'Content-Type': 'application/json',
         },
         });
-        console.log(response);
+        console.log(response.body, `
+        HERE IS THE RESPONSE BODY
+        
+        
+        `);
 
     if (response.ok) {
       // console.log(childBirthDate);
