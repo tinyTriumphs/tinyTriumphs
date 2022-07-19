@@ -1,15 +1,17 @@
 // const childCards = $('#newid');
-const photoUpload = $('#photo-upload')
+// console.log('photo js connected')
 
-const newFormHandler = async (event) => {
-    event.preventDefault();
+// const photoUpload = $('#photo-upload')
+
+// const newFormHandler = async (event) => {
+//     event.preventDefault();
     
-    var uploadButtonClicked = $(event.target);
-    currentInput = uploadButtonClicked.parent()[0];
-    const selectedFile = document.getElementById('input').files[0].name;
-    console.log (selectedFile);
-    console.log('it was clicked');
-    console.log(currentInput);
+//     var uploadButtonClicked = $(event.target);
+//     currentInput = uploadButtonClicked.parent()[0];
+//     const selectedFile = document.getElementById('input').files[0].name;
+//     console.log (selectedFile);
+//     console.log('it was clicked');
+//     console.log(currentInput);
 
     // if (currentInput) {
     //     const response = await fetch(`/upload`, {
@@ -20,7 +22,7 @@ const newFormHandler = async (event) => {
 
 
     // $('#child-photo-upload').attr('src', 'new');
-}
+// }
 
 // document
 //     .querySelector('#photo-upload')
@@ -62,4 +64,16 @@ const newFormHandler = async (event) => {
 // };
 
 
-photoUpload.on("click", ".newclass", newFormHandler);
+// photoUpload.on("click", ".newclass", newFormHandler);
+
+// const image_input = document.querySelector("#image_input");
+// var upload_image = "";
+
+// image_input.addEventListener("change", function(){
+//     console.log(image_input.value)
+//     const reader = new FileReader();
+//     reader.addEventListener("load", () => {
+//         uploaded_image = reader.result;
+//         document.querySelector("#display_image")
+//     })
+// })
