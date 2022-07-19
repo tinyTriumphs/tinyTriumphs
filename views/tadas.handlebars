@@ -6,11 +6,12 @@
     {{!-- <div id ="newid">
     <button class="newclass" type="button">My button</button>
     </div> --}}
-    <div class="row id" id="newid">
+    <div>
       {{#each childs as |child|}}
       <div class="card">
         <a href="/api/tadas/{{child.id}}" class="btn btn-light">
-        <img src="{{child.profileImage}}" class="card">
+        <p class="text-center"><img src="{{child.profileImage}}" class="card-img-top rounded-circle square-img p-2" alt="{{child.name}} photo" id="imgid"></p>
+        {{!-- <img src="{{child.profileImage}}" class="card"> --}}
         <i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{child.name}}</a>
      </div>
       {{/each}}

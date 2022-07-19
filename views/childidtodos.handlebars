@@ -17,17 +17,17 @@
         <table class="table table-bordered table-sm w-100">
             <thead class="thead">
                 <tr>
-                    <th scope="col" class="col-8">Milestone</th>
-                    <th scope="col" class="col-4">Anticipated Age Range</th>
-                    <th scope="col" class="col-2">Update</th>
+                    <th scope="col" class="col-8"><p class="xs-font">Milestone</p></th>
+                    <th scope="col" class="col-4"><p class="xs-font">Anticipated Age Range</p></th>
+                    <th scope="col" class="col-2"><p class="xs-font">Update</p></th>
                 </tr>
             </thead>
             <tbody>
             {{#each devMilestones as |devMilestone|}}
                 <tr>
-                    <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
-                    <td>{{devMilestone.devMilestone_expectedRange}}</td>
-                    <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#devModal{{devMilestone.id}}"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</button></td>
+                    <td><p class="xs-font"><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</p></td>
+                    <td><p class="xs-font">{{devMilestone.devMilestone_expectedRange}}</p></td>
+                    <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#devModal{{devMilestone.id}}"><p class="xs-font"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</p></button></td>
                     {{!-- DEV MILESTONE MODAL STARTS HERE --}}
                     <div class="modal fade" id="devModal{{devMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -53,6 +53,7 @@
                             </div>
                         </div>
                      </div>
+                </tr>
             {{/each}}
         </table>
         {{/if}}
@@ -71,22 +72,21 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
         {{#if medMilestones.length}}
-        <h2>Medical Milestones</h2>
 
         <table class="table table-bordered table-sm w-100">
             <thead>
                 <tr>
-                    <th scope="col" class="col-8">Milestone</th>
-                    <th scope="col" class="col-4">Recommended Age Range</th>
-                    <th scope="col" class="col-2">Update</th>
+                    <th scope="col" class="col-8"><p class="xs-font">Milestone</p></th>
+                    <th scope="col" class="col-4"><p class="xs-font">Anticipated Age Range</p></th>
+                    <th scope="col" class="col-2"><p class="xs-font">Update</p></th>
                 </tr>
             </thead>
             <tbody>
             {{#each medMilestones as |medMilestone|}}
                 <tr>
-                    <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
-                    <td>{{medMilestone.medMilestone_expectedRange}}</td>
-                    <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#medModal{{medMilestone.id}}"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</button></td>
+                    <td><p class="xs-font"><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</p></td>
+                    <td><p class="xs-font">{{medMilestone.medMilestone_expectedRange}}</p></td>
+                    <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#medModal{{medMilestone.id}}"><p class="xs-font"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</p></button></td>
                     {{!-- MED MILESTONE MODAL STARTS HERE --}}
                     <div class="modal fade" id="medModal{{medMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -112,6 +112,7 @@
                             </div>
                         </div>
                      </div>
+                </tr>
             {{/each}}
         </table>
         {{/if}}
