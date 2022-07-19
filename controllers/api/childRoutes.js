@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { User, Child, devMilestones, medMilestones } = require("../../models");
 const withAuth = require('../../utils/auth');
+const medMilestoneSeeds = require("../../milestones/medMilestoneDefaults.json")
 
 //Get all associated children to user
 //TODO currently gets all children in the database; want to get all children associated w/ User ID
@@ -45,7 +46,7 @@ router.post("/", withAuth, async (req, res) => {
   try {
     console.log(
       { ...req.body },
-      `Right Here is right 
+      `HERE IS THE REQ BODY
         
         
         
@@ -59,7 +60,40 @@ router.post("/", withAuth, async (req, res) => {
       res.status(404).json({ message: "No child found with this id!" });
       return;
     }
-    console.log(childs);
+    console.log(childs, `
+    
+    
+    HERE ARE THE CHILD DATA
+    
+    `);
+    console.log(childs.dataValues.id);
+
+    console.log(medMilestoneSeeds, `
+    
+    med milestone seeds
+    
+    `)
+
+    const medical = await medMilestones.bulk({
+      medMilestone: 'Sample Milestone',
+      medMilestone_complete: false,
+      medMilestone_ToDoDate: '2022-01-10',
+      child_id: childs.dataValues.id
+    })
+
+    const developmental = await devMilestones.create({
+      devMilestone: 'Sample Dev Milestone',
+      devMilestone_complete: false,
+      devMilestone_expectedDate: '2022-01-10',
+      devMilestone_expectedRange: '4-6 months'
+    })
+
+    console.log(medical, `
+    
+    THIS IS THE MEDICAL DATA
+    
+    `);
+
     res.status(200).json(childs);
   } catch (err) {
     res.status(500).json(err);
