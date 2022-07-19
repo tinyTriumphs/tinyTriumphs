@@ -90,7 +90,6 @@
         "medMilestone_dateComplete": "2022-07-15",
         "child_id": 1
     },
-    // start of child #5
     {
         "medMilestone": "HepB (Hepatitis B), 2nd Dose",
         "medMilestone_complete": true,
