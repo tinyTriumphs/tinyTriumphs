@@ -1,5 +1,7 @@
 <div class="card text-center">
-<img class="card-img-top" src="{{profileImage}}" alt="Photo of {{name}}">
+
+<p class="text-center"><img src="{{profileImage}}" class="card-img-top rounded-circle square-img p-2" alt="{{name}} photo" id="imgid"></p>
+{{!-- <img class="card-img-top" src="{{profileImage}}" alt="Photo of {{name}}"> --}}
 
 <h1>{{name}}</h1>
   <div>
@@ -9,9 +11,9 @@
 
         Name: <strong>{{name}}</strong><br>
         Birthdate: <strong class="single-child-date">{{birthdate}}</strong>
-        {{#each devMilestones as |devMilestone|}}
+        {{!-- {{#each devMilestones as |devMilestone|}}
         <li>{{devMilestone.devMilestone}}: Completed on {{devMilestone.devMilestone_dateComplete}}</li>
-        {{/each}}
+        {{/each}} --}}
     </p>
         
         <button class="btn btn-light newclass" type="button" data-toggle="collapse" data-target="#uploadPhoto" aria-expanded="false" aria-controls="collapseExample">
