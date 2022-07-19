@@ -19,11 +19,9 @@
         </button>
         <div class="collapse" id="uploadPhoto">
           <div class="card card-body">
-            <form class="form new-child-form">
-              <div class="form-group">
-                <input type="file" id="input" /> 
-                <button type="submit" class="btn btn-dark" id="photo-upload">Submit</button>
-              </div>
+            <form method="POST" action="/upload/" enctype="multipart/form-data">
+              <input type="file" name="image" />
+              <input type="submit" />
             </form>  
           </div>
         </div>
@@ -31,6 +29,8 @@
   </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/assets/js/momentjs.js"></script>
+<script src="/assets/js/photo.js"></script>
 {{!-- <script src="/assets/utils/helpers.js"></script> --}}
