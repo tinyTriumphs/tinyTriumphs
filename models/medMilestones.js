@@ -29,6 +29,11 @@ medMilestones.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    //NEW FIELD - the RANGE of the milestone expected to occur - i.e. 3-6 months
+    medMilestone_expectedRange: {
+      type: DataTypes.STRING,
+    allowNull: true,
+    },
     //NEW FIELD - when the procedure/appointment is scheduled/took place - i.e. April 1, 2022
     medMilestone_dateComplete: {
         type: DataTypes.DATE,

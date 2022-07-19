@@ -45,6 +45,17 @@ header, .project:not(:last-child) {
     font-size: large;
     color: #6f42c1;
   }
+
+  .counter {
+    font-weight: 700;
+    font-size: x-large;
+    color: #6f42c1;
+  }
+
+  .hero {
+    font-weight: 700;
+    color: #6f42c1;
+  }
   /* .no-button {
     background: none;
     border: none;
@@ -65,4 +76,3 @@ header, .project:not(:last-child) {
     font-size: 2rem;
     color: white;
   }
-  

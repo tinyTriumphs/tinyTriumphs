@@ -62,6 +62,7 @@ router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     console.log(req.session.logged_in);
     console.log('We are logged in and are redirecting')
+    console.log(req.session.cookie);
     res.redirect('/profile');
     return;
   }

@@ -1,5 +1,79 @@
     <h1><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;Tadas for {{name}}</h1>
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <h2><i class="fa fa-angle-double-down icon-cog-body" aria-hidden="true"></i>
+Developmental Milestones</h2>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        
+        {{#if devMilestones.length}}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Milestone</th>
+                    <th scope="col">Date Completed</th>
+                    {{!-- <th scope="col">Update</th> --}}
+                </tr>
+            </thead>
+            <tbody>
+            {{#each devMilestones as |devMilestone|}}
+                <tr>
+                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
+                    <td>{{devMilestone.devMilestone_dateComplete}}</td>
+                    {{!-- <td>Update</td> --}}
+            {{/each}}
+        </table>
+        {{/if}}      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h2><i class="fa fa-angle-double-down icon-cog-body" aria-hidden="true"></i>
+        Medical Milestones</h2>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+{{#if medMilestones.length}}
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Milestone</th>
+                    <th scope="col">Date Completed</th>
+                    {{!-- <th scope="col">Update</th> --}}
+                </tr>
+            </thead>
+            <tbody>
+            {{#each medMilestones as |medMilestone|}}
+                <tr>
+                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
+                    <td>{{medMilestone.medMilestone_dateComplete}}</td>
+                    {{!-- <td>Update</td> --}}
+            {{/each}}
+        </table>
+
+        {{/if}}      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- 
+
+
         <h2>Developmental Milestones</h2>
+
         {{#if devMilestones.length}}
         
         <table class="table">
@@ -41,7 +115,7 @@
             {{/each}}
         </table>
 
-        {{/if}}
+        {{/if}} --}}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/assets/js/momentjs.js"></script>
