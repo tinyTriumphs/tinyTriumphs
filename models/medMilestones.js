@@ -25,9 +25,8 @@ medMilestones.init(
       },
     //NEW FIELD - when the procedure/appointment is recommended to occur
     medMilestone_ToDoDate: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
     //NEW FIELD - the RANGE of the milestone expected to occur - i.e. 3-6 months
     medMilestone_expectedRange: {
@@ -36,7 +35,7 @@ medMilestones.init(
     },
     //NEW FIELD - when the procedure/appointment is scheduled/took place - i.e. April 1, 2022
     medMilestone_dateComplete: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: true
     },
     // ?? Do we need to keep this?
