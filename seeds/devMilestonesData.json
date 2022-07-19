@@ -112,7 +112,7 @@
         "child_id": 1 
     },
     {
-        "devMilestone": "Waves “bye-bye”",
+        "devMilestone": "Waves 'bye-bye'",
         "devMilestone_complete": true,
         "devMilestone_expectedDate": "2017-09-15",
         "devMilestone_expectedRange": "12-14 months",
@@ -120,7 +120,7 @@
         "child_id": 5 
     },
     {
-        "devMilestone": "Calls a parent “mama” or “dada” or another special name",
+        "devMilestone": "Calls a parent 'mama' or 'dada' or another special name",
         "devMilestone_complete": true,
         "devMilestone_expectedDate": "2017-09-15",
         "devMilestone_expectedRange": "12-14 months",
@@ -128,7 +128,7 @@
         "child_id": 5 
     },
     {
-        "devMilestone": "Understands “no”, i.e., pauses briefly or stops when you say it",
+        "devMilestone": "Understands 'no', i.e., pauses briefly or stops when you say it",
         "devMilestone_complete": true,
         "devMilestone_expectedDate": "2017-09-15",
         "devMilestone_expectedRange": "12-14 months",
@@ -222,5 +222,5 @@
         "devMilestone_expectedRange": "18 to 23 months",
         "devMilestone_dateComplete": "2018-05-20",
         "child_id": 5 
-    },
+    }
 ]
