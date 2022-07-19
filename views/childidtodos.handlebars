@@ -17,8 +17,8 @@
         <table class="table table-bordered table-sm w-100">
             <thead class="thead">
                 <tr>
-                    <th scope="col" class="col-4">Milestone</th>
-                    <th scope="col" class="col-8">Anticipated Age Range</th>
+                    <th scope="col" class="col-8">Milestone</th>
+                    <th scope="col" class="col-4">Anticipated Age Range</th>
                     <th scope="col" class="col-2">Update</th>
                 </tr>
             </thead>
@@ -34,7 +34,7 @@
                             <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">{{devMilestone.devMilestone}}</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle icon-cog-body" aria-hidden="true"></i></button>
                             </div>
 
                             {{!-- UPDATE DEV MILESEONE MODAL HERE --}}
@@ -76,8 +76,8 @@
         <table class="table table-bordered table-sm w-100">
             <thead>
                 <tr>
-                    <th scope="col" class="col-4">Milestone</th>
-                    <th scope="col" class="col-8">Anticipated Appointment Date</th>
+                    <th scope="col" class="col-8">Milestone</th>
+                    <th scope="col" class="col-4">Recommended Age Range</th>
                     <th scope="col" class="col-2">Update</th>
                 </tr>
             </thead>
@@ -85,7 +85,7 @@
             {{#each medMilestones as |medMilestone|}}
                 <tr>
                     <td><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
-                    <td>{{medMilestone.medMilestone_ToDoDate}}</td>
+                    <td>{{medMilestone.medMilestone_expectedRange}}</td>
                     <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#medModal{{medMilestone.id}}"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</button></td>
                     {{!-- MED MILESTONE MODAL STARTS HERE --}}
                     <div class="modal fade" id="medModal{{medMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -118,6 +118,7 @@
       </div>
     </div>
   </div>
+  <p class="text-right"><a href="/api/tadas/{{id}}"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;View TaDas</a></p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/assets/js/momentjs.js"></script>
