@@ -43,7 +43,7 @@ const hbs = exphbs.create({
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    maxAge: 86400,
+    maxAge: 86400000,
   },
   resave: false,
   saveUninitialized: true,
@@ -65,6 +65,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 //USES LOCAL STORAGE ONLY - NOT NEEDED FOR AWS UPLOADS
+//Leaving in if we want to use this in the future
 // const storage = multer.diskStorage({
 //   destination: (req, file, cb) => {
 //     cb(null, "uploads");
@@ -101,19 +102,16 @@ app.post("/upload/:id", upload.single("image"), async (req, res) => {
   try {
     const result = await s3Uploadv2(req.file);
     const newProfileImage = result.Location;
+
     //updates the child profile image url in the db
     Child.update({
       profileImage: newProfileImage,
     },
     {
       where: {
-        //TODO needs to reference child id req.params.id
-        //currently hard coded
         id: req.params.id,
       }
     })
-    // return res.json({status: "success", result });
-    console.log(result);
     res.redirect('/api/children/');
   } catch (err) {
     console.log(err)
