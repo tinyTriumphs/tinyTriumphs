@@ -878,5 +878,77 @@
         "devMilestone_expectedRange": "2 to 3 months",
         "devMilestone_dateComplete": "2021-06-27",
         "child_id": 2 
+    },
+    {
+        "devMilestone": "Reacts to loud sounds",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-01",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2021-06-28",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Watches you as you move",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-01",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2021-06-29",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Holds head up when on tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-01",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2021-06-30",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "First Tooth",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-02-01",
+        "devMilestone_expectedRange": "6 to 10 months",
+        "devMilestone_dateComplete": "2022-01-20",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Smiles on their own to get your attention",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-09-01",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2021-08-25",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Chuckles (not yet a full laugh) when you try to make them laugh",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-09-01",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2021-08-26",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Makes sounds like 'oooo', 'aahh' (cooing)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-09-01",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2021-08-27",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "If hungry, opens mouth when they see breast or bottle",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-09-01",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2021-08-28",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Holds head steady without support when you are holding them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-09-01",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2021-08-29",
+        "child_id": 2 
     }
 ]
