@@ -134,17 +134,18 @@ router.get('/:id', async (req, res) => {
     try {
       const childs = await  Child.update({
         devMilestones_complete: true,
+        devMilestones_dateComplete: req.body
       },
       {
         where: {
-          id: 6,
+        id: 118,
         }
       })
-      if (!data) {
+      if (!childs) {
         res.status(404).json({ message: 'No Tag with this id!' });
         return;
-      }
-      res.status(200).json(data);
+      }console.log(req.body)
+      res.status(200).json(childs);
     } catch (error) {
       res.status(500).json(error);
     }
