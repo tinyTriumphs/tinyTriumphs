@@ -21,7 +21,7 @@
         </button>
         <div class="collapse" id="uploadPhoto">
           <div class="card card-body">
-            <form method="POST" action="/upload/" enctype="multipart/form-data">
+            <form method="POST" action="/upload/{{id}}" enctype="multipart/form-data">
               <input type="file" name="image" />
               <input type="submit" />
             </form>  
