@@ -73,7 +73,9 @@ router.get('/login', (req, res) => {
 
 router.get('/about', async (req, res) => {
   try {
-    res.render('aboutus');
+    res.render('aboutus', {
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
