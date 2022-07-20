@@ -9,7 +9,7 @@ const newFormHandler = async (event) => {
     console.log(name);
     const childBirthDate = document.querySelector('#child-birthdate').value.trim();
     console.log(childBirthDate);
-    const gender = document.querySelector('input[name="gender"]:checked').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value.trim();
     console.log(gender);
 
 
@@ -29,8 +29,8 @@ const newFormHandler = async (event) => {
         `);
 
     if (response.ok) {
-      console.log(childBirthDate);
-        // document.location.replace('/api/children');
+      // console.log(childBirthDate);
+        document.location.replace('/api/children');
       } else {
         alert('Failed to create child');
     }
