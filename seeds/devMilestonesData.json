@@ -670,5 +670,141 @@
         "devMilestone_expectedRange": "60+ months",
         "devMilestone_dateComplete": "2021-07-04",
         "child_id": 5 
+    },
+    {
+        "devMilestone": "Counts to 10",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-05",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Names some numbers between 1 and 5 when you point to them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-06",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Writes some letters in her name",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-07",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Names some letters when you point to them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-08",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Hops on one foot",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-09",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Knows familiar people",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-03-15",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2017-03-01",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Laughs",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-03-15",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2017-03-02",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Blows 'raspberries' (sticks tongue out and blows)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-03-15",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2017-03-03",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Rolls from tummy to back",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-03-15",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2017-03-04",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Pushes up with straight arms when on tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-03-15",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2017-03-04",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Leans on hands to support themselves when sitting",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-03-15",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2017-03-03",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Shows several facial expressions, like happy, sad, angry, and surprised",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-06-15",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2017-05-10",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Reacts when you leave, i.e., looks, reaches for you, or cries",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-06-15",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2017-05-28",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Smiles or laughs when you play peek-a-boo",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-06-15",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2017-06-09",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Lifts arms up to be picked up",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-06-15",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2017-06-13",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Gets to a sitting position by themselves",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-06-15",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2017-06-09",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Sits without support",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2017-06-15",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2017-06-01",
+        "child_id": 5 
     }
 ]
