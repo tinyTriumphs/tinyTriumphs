@@ -29,7 +29,7 @@
                     <td><p class="xs-font">{{devMilestone.devMilestone_expectedRange}}</p></td>
                     <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#devModal{{devMilestone.id}}"><p class="xs-font"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</p></button></td>
                     {{!-- DEV MILESTONE MODAL STARTS HERE --}}
-                    <div class="modal fade" id="devModal{{devMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade devmodal" id="devModal{{devMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                             <div class="modal-header">
@@ -39,16 +39,19 @@
 
                             {{!-- UPDATE DEV MILESEONE MODAL HERE --}}
                             <div class="modal-body">
-                                <form class="form update-dev-milestone-form">
+                                <form class="form dev-milestone-form">
                                     <div class="form-group">
                                         <label for="dev-milestone">When did your child complete this milestone?</label>
-                                        <input class="form-input" type="date" id="dev-milestone" name="dev-milestone" />
+                                        {{!-- INPUT FOR DATE --}}
+                                        <input class="form-input" type="date" id="dev-milestone-date" name="dev-milestone-date" />
+                                        {{!-- INPUT FOR ID (PREFILLED) --}}
+                                        <input type="text" value="{{devMilestone.id}}" id="dev-milestone-id" name="dev-milestone-id" hidden>
                                     </div>
                                     </form>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark button">Save changes</button>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-dark">Save changes</button>
                             </div>
                             </div>
                         </div>
@@ -123,4 +126,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/assets/js/momentjs.js"></script>
+<script src="/assets/js/todos.js"></script>
+
 {{!-- <script src="/assets/utils/helpers.js"></script> --}}

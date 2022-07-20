@@ -13,15 +13,15 @@
 //     console.log('it was clicked');
 //     console.log(currentInput);
 
-    // if (currentInput) {
-    //     const response = await fetch(`/upload`, {
-    //         method: 'POST',
-    //         body: 
-    //     })
-    // }
+//     if (currentInput) {
+//         const response = await fetch(`/upload`, {
+//             method: 'POST',
+//             body: 
+//         })
+//     }
 
 
-    // $('#child-photo-upload').attr('src', 'new');
+//     $('#child-photo-upload').attr('src', 'new');
 // }
 
 // document
