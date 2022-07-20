@@ -27,13 +27,13 @@ Child.init(
       // allowNull: false,
       // value: ['male', 'female', 'other'],
       type: DataTypes.STRING,
-      validate: {
-        isIn: [[
-        'female',
-        'male',
-        'other'
-        ]],
-      }
+      // validate: {
+      //   isIn: [[
+      //   'female',
+      //   'male',
+      //   'other'
+      //   ]],
+      // }
     },
     profileImage: {
       type: DataTypes.STRING,

@@ -4,7 +4,6 @@ const withAuth = require('../../utils/auth');
 const medMilestoneSeeds = require("../../milestones/medMilestoneDefaults.json")
 
 //Get all associated children to user
-//TODO currently gets all children in the database; want to get all children associated w/ User ID
 router.get("/", withAuth, async (req, res) => {
   try {
     //Finds all children associated w/ logged in user id
@@ -31,7 +30,7 @@ router.get("/", withAuth, async (req, res) => {
       childs
     );
 
-    //TODO change to render when handlebars is functional
+    
     res.render("children", {
       childs,
       logged_in: req.session.logged_in,
