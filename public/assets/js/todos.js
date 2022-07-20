@@ -58,8 +58,30 @@ const newFormHandler = async (event) => {
     console.log('it was clicked');
     console.log(currentInput);
     console.log(devDate);
-    console.log(devID);
-}
+    // console.log(devID);
+
+    if (devDate && devID) {
+        const response = await fetch(`/api/todos/dev`, {
+          method: 'PUT',
+          body: JSON.stringify({ devMilestone_dateComplete: devDate, id: devID }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          });
+          console.log(response, `
+          
+          THIS IS THE RESPONSE ON THE CLIENT
+          
+          `);
+  
+      if (response.ok) {
+        console.log(response);
+        //   document.location.replace('/api/children');
+        } else {
+          alert('Failed to update devMmilestone');
+      }
+    }
+  };
 
 // document
 //     .querySelector('.dev-milestone-form')
