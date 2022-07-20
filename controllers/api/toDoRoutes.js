@@ -12,6 +12,7 @@ router.get("/", async (req, res) => {
           where: {
             id: req.session.user_id,
           },
+        }
         ],
       });
   

@@ -1,12 +1,7 @@
-//TODO: Tom
-
-console.log("connected");
-///SAMPLE FROM MINI PROJECT////
 
 const loginFormHandler = async (event) => {
     event.preventDefault();
-  // alert('testing');
-  //   console.log('Testing...');
+ 
   
     // Collect values from the login form
     const email = document.querySelector('#email-login').value.trim();
@@ -50,7 +45,7 @@ const loginFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        // alert('Broken');
+      
         alert(response.statusText);
       }
     }
