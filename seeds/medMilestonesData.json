@@ -267,5 +267,68 @@
         "medMilestone_ToDoDate": "2016-07-15",
         "medMilestone_dateComplete": "2016-07-15",
         "child_id": 5
+    },
+    {
+        "medMilestone": "HepB (Hepatitis B), 2nd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2021-06-01",
+        "medMilestone_dateComplete": "2021-06-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "Hib (Haemophilus Influenzae Type B), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-04-01",
+        "medMilestone_dateComplete": "2022-04-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "Hib (Haemophilus Influenzae Type B), 4th Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "PCV13 (Pneumococcal Conjugate), 4th Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "MMR (Measles, Mumps, Rubella)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "VAR (Varicella)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "Dtap (Diphtheria, Tetanus, & Acellular Pertussis), 4th Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "RV (Rotavirus)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2021-06-01",
+        "medMilestone_dateComplete": "2021-06-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "Dtap (Diphtheria, Tetanus, & Acellular Pertussis)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2021-06-01",
+        "medMilestone_dateComplete": "2021-06-01",
+        "child_id": 2
     }
 ]

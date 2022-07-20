@@ -806,5 +806,77 @@
         "devMilestone_expectedRange": "9 to 11 months",
         "devMilestone_dateComplete": "2017-06-01",
         "child_id": 5 
+    },
+    {
+        "devMilestone": "Waves 'bye-bye'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-01",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2022-05-20",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Calls a parent 'mama' or 'dada' or another special name",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-01",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2022-05-21",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Understands 'no', i.e., pauses briefly or stops when you say it",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-01",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2022-05-22",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Pulls up to stand",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-01",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2022-05-23",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Drinks from a cup without a lid, as you hold it",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-01",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2022-05-24",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Picks things up between thumb and pointer finger",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-01",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2022-05-25",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Calms down when spoken to or picked up",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-07-01",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2021-06-25",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Looks at your face",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-07-01",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2021-06-26",
+        "child_id": 2 
+    },
+    {
+        "devMilestone": "Smiles when you talk to or smile at them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-07-01",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2021-06-27",
+        "child_id": 2 
     }
 ]
