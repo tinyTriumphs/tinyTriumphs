@@ -54,7 +54,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
 router.get('/addchild', withAuth, async (req, res) => res.render('addchild'));
 
-// TODO: Tom
+
 router.get('/login', (req, res) => {
   
 //////// SAMPLE FROM MINI PROJECT ////////
