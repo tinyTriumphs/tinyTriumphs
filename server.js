@@ -94,7 +94,7 @@ const upload = multer({
   storage, 
   fileFilter, 
   //limits file size to 1MB
-  limits: {fileSize: 1000000} });
+  limits: {fileSize: 10000000} });
 
 //upload functionality on a post request through/upload for a single image
 app.post("/upload/:id", upload.single("image"), async (req, res) => {
