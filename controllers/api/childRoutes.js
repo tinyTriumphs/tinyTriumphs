@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { User, Child, devMilestones, medMilestones } = require("../../models");
 const withAuth = require('../../utils/auth');
-const medMilestoneSeeds = require("../../milestones/medMilestoneDefaults.json")
 
 //Get all associated children to user
 router.get("/", withAuth, async (req, res) => {
@@ -21,16 +20,6 @@ router.get("/", withAuth, async (req, res) => {
 
     const childs = childData.map((childs) => childs.get({ plain: true }));
 
-    console.log(
-      `
-        
-        THESE ARE THE CHILDREN
-        
-        `,
-      childs
-    );
-
-    
     res.render("children", {
       childs,
       logged_in: req.session.logged_in,
@@ -52,40 +41,6 @@ router.post("/", withAuth, async (req, res) => {
       res.status(404).json({ message: "No child found with this id!" });
       return;
     }
-
-    console.log(childs, `
-    
-    
-    HERE ARE THE CHILDS
-    
-    
-    
-    `);
-
-    console.log(childs.dataValues.birthdate, `
-    
-
-
-
-    HERE IS THE BIRTHDATE
-    
-
-
-
-    `)
-
-    // var childBirthdate = JSON.stringify(childs.dataValues.birthdate);
-
-    // console.log(childBirthdate, `
-    
-
-
-    // HERE IS THE STRINGIFIED VERSION
-
-
-    
-    // `);
-
 
     //all medical fields that will be pre-filled and attached to new child id
     const medical = await medMilestones.bulkCreate(
@@ -238,29 +193,11 @@ router.get("/:id", withAuth, async (req, res) => {
 
     const child = childData.get({ plain: true });
 
-    console.log(child);
-
     res.render("childid", {
       ...child,
       logged_in: true,
     });
 
-    // res.send(childData)
-
-    // const childs = childData.map((childs) => childs.get({ plain: true }));
-
-    // console.log(`
-
-    // THESE ARE THE CHILDREN
-
-    // `, childs);
-
-    // //TODO change to render when handlebars is functional
-    // res.render('childid', {
-    //     childs,
-    //     logged_in: req.session.logged_in,
-    //     user_id: req.session.user_id
-    // });
   } catch (err) {
     res.status(400).json(err);
   }
