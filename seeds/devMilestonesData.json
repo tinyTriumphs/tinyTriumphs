@@ -3,7 +3,7 @@
         "devMilestone": "First Tooth",
         "devMilestone_complete": false,
         "devMilestone_expectedDate": "2022-11-18",
-        "devMilestone_expectedRange": "3 to 6 months",
+        "devMilestone_expectedRange": "6 to 10 months",
         "devMilestone_dateComplete": null,
         "child_id": 1 
     },
@@ -333,6 +333,110 @@
         "devMilestone_expectedDate": "2018-12-15",
         "devMilestone_expectedRange": "24 to 29 months",
         "devMilestone_dateComplete": "2018-12-01",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Looks at your face to see how to react in a new situation",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-15",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2018-12-02",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Points to at least two body parts when you ask them to show you",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-15",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2018-12-03",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Uses more gestures than just waving and pointing, i.e., like blowing a kiss or nodding yes",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-15",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2018-12-15",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Tries to use switches, knobs, or buttons on a toy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-15",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2018-12-15",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Runs",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-15",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2018-12-15",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Eats with a spoon",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-15",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2018-12-15",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Follows simple routines when told, i.e., like helping to pick up toys when you say, 'It is clean-up time.'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-09",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Says about 50 words",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-10",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Says words like 'I,' 'me,' or 'we'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-11",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Uses things to pretend, i.e., like feeding a block to a doll as if it were food",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Shows simple problem-solving skills, i.e., like standing on a small stool to reach something",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-13",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Follows two-step instructions, i.e., like 'Put the toy down and close the door.'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-14",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Jumps off the ground with both feet",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-15",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2019-06-15",
         "child_id": 5 
     }
 ]
