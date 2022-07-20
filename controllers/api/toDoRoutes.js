@@ -94,19 +94,20 @@ router.get('/:id', async (req, res) => {
             include: [
                 {
                     model: devMilestones,
-                //     where: {
-                //         devMilestone_complete: false
-                //     }
+                    where: {
+                        devMilestone_complete: false
+                    }
                 },
                 {
                     model: medMilestones,
-                    // where: {
-                    //     medMilestone_complete: false
-                    // }
+                    where: {
+                        medMilestone_complete: false
+                    }
                 }
             ],
         }
-        );console.log(toDoData);
+        );
+        // console.log(toDoData);
         const childToDos = toDoData.get({ plain: true });
 
         console.log(childToDos);
@@ -118,27 +119,35 @@ router.get('/:id', async (req, res) => {
     } catch (err) {
     res.status(500).json(err);
     }
-});
+  });
 
- // update a category by its `id` value
- router.put('/:id', async (req, res) => {
-  try {
-    const toDoData = await Child.update(req.body, {
-      where: { id: req.params.id },
-    });
-
-    if (!toDoData) {
-      res.status(404).json({ message: 'No ToDo found with this id!'});
-      return;
+  router.put('/:id', async (req, res) => {
+    try {
+      const childs = await  Child.update({
+        devMilestones_complete: true,
+      },
+      {
+        where: {
+          id: 6,
+        }
+      })
+      if (!data) {
+        res.status(404).json({ message: 'No Tag with this id!' });
+        return;
+      }
+      res.status(200).json(data);
+    } catch (error) {
+      res.status(500).json(error);
     }
+  });
 
-    res.status(200).json(data);
-  } catch (err) {
-    res.status(500).json(err);
-    }
 
-});
 
+
+    // const childs = await Child.create({
+    //   ...req.body,
+    //   user_id: req.session.user_id,
+    // });
 
 
 
