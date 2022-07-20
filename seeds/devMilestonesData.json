@@ -558,5 +558,117 @@
         "devMilestone_expectedRange": "4 to 5 months",
         "devMilestone_dateComplete": "2016-12-15",
         "child_id": 5 
+    },
+    {
+        "devMilestone": "Comforts others who are hurt or sad, like hugging a crying friend",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-02",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Likes to be a 'helper'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-03",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Says sentences with four or more words",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-04",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Talks about at least one thing that happened during their day, i.e., like 'I played soccer.'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-05",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Answers simple questions, i.e., 'What is a coat for?' or 'What is a crayon for?'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-01",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Tells what comes next in a well-known story",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-02",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Catches a large ball most of the time",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-03",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Serves themselves food or pours water, with adult supervision",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-04",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Unbuttons some buttons",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-05",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Holds crayon or pencil between fingers and thumb (not a fist)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-15",
+        "devMilestone_expectedRange": "48 to 59 months",
+        "devMilestone_dateComplete": "2021-06-06",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Follows rules or takes turns when playing games with other children",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-01",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Sings, dances, or acts for you",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-02",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Keeps a conversation going with more than three back-and-forth exchanges",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-03",
+        "child_id": 5 
+    },
+    {
+        "devMilestone": "Uses or recognizes simple rhymes (bat-cat, ball-tall)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-07-15",
+        "devMilestone_expectedRange": "60+ months",
+        "devMilestone_dateComplete": "2021-07-04",
+        "child_id": 5 
     }
 ]
