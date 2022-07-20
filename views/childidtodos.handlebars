@@ -91,7 +91,7 @@
                     <td><p class="xs-font">{{medMilestone.medMilestone_expectedRange}}</p></td>
                     <td><button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#medModal{{medMilestone.id}}"><p class="xs-font"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;TaDa</p></button></td>
                     {{!-- MED MILESTONE MODAL STARTS HERE --}}
-                    <div class="modal fade" id="medModal{{medMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade modal medmodal" id="medModal{{medMilestone.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                             <div class="modal-header">
@@ -104,13 +104,16 @@
                                 <form class="form update-med-milestone-form">
                                     <div class="form-group">
                                         <label for="med-milestone">When did your child complete this milestone?</label>
-                                        <input class="form-input" type="date" id="med-milestone" name="med-milestone" />
+                                        {{!-- INPUT FOR DATE --}}
+                                        <input class="form-input" type="date" id="med-milestone-date" name="med-milestone" />
+                                        {{!-- INPUT FOR ID (PREFILLED) --}}
+                                        <input type="text" value="{{medMilestone.id}}" id="med-milestone-id" name="med-milestone-id" hidden>
                                     </div>
                                     </form>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark button">Save changes</button>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-dark">Save changes</button>
                             </div>
                             </div>
                         </div>

@@ -71,6 +71,47 @@ router.get("/", async (req, res) => {
       res.status(500).json(err);
     }
   } )
+
+  router.put("/med", async (req, res) => {
+    try {
+      // const devMilestonesResult = req.body;
+      // console.log(devMilestonesResult, `
+
+
+      // THIS IS THE REQUEST BODY ON THE SERVER
+      
+
+
+      // `);
+      const { medMilestone_dateComplete, id } = req.body
+      
+      const dev = await medMilestones.update(
+        {
+          medMilestone_dateComplete,
+          medMilestone_complete: true
+        },
+        {
+          where: {
+           id: id,
+          }
+        }
+      );
+      if(!dev) {
+        res.status(404).json({ message: "Not updated" });
+        return;
+      }
+      console.log(dev, `
+      
+      HERE IS THE MED MILESTONE
+      
+      `);
+      
+      res.status(200).json(dev);
+
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  } )
   
 //   router.post("/", withAuth, async (req, res) => {
 //     try {

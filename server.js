@@ -97,7 +97,7 @@ const upload = multer({
   limits: {fileSize: 1000000} });
 
 //upload functionality on a post request through/upload for a single image
-app.post("/upload/", upload.single("image"), async (req, res) => {
+app.post("/upload/:id", upload.single("image"), async (req, res) => {
   try {
     const result = await s3Uploadv2(req.file);
     const newProfileImage = result.Location;
@@ -109,7 +109,7 @@ app.post("/upload/", upload.single("image"), async (req, res) => {
       where: {
         //TODO needs to reference child id req.params.id
         //currently hard coded
-        id: 6,
+        id: req.params.id,
       }
     })
     // return res.json({status: "success", result });
