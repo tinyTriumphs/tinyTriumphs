@@ -77,7 +77,7 @@ router.get('/:id', async (req, res) => {
                     }
                 }
             ]
-        });
+        });console.log(taDaData);
 
         const childTaDas = taDaData.get({ plain: true });
 

@@ -1,7 +1,3 @@
-//TODO: Tom
-
-
-///SAMPLE FROM MINI PROJECT////
 
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
