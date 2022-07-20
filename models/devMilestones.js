@@ -27,9 +27,8 @@ devMilestones.init(
         //NEW FIELD - when the developmental milestone might happen - i.e. Jan 3, 2023
         //note: this shouldn't be rendered, but could be used to help SORT data; should be at the early end of the CDC range (aka if 3-6 mon, render at 3 mon date from birth)
         devMilestone_expectedDate: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.STRING,
           allowNull: false,
-          defaultValue: DataTypes.NOW,
         },
         //NEW FIELD - the RANGE of the milestone expected to occur - i.e. 3-6 months
         devMilestone_expectedRange: {
@@ -39,7 +38,7 @@ devMilestones.init(
 
         //NEW FIELD - when the dev milestone took place
         devMilestone_dateComplete: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: true
         },
         // ?? Do we need to keep this?

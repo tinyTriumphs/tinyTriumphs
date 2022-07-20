@@ -76,3 +76,14 @@ header, .project:not(:last-child) {
     font-size: 2rem;
     color: white;
   }
+
+  .square-img {
+    object-fit: cover;
+    width:230px;
+    height:230px;
+  }
+
+  .xs-font {
+    font-weight: 300;
+    font-size: small;
+  }

@@ -18,16 +18,16 @@ Developmental Milestones</h2>
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Milestone</th>
-                    <th scope="col">Date Completed</th>
+                    <th scope="col"><p class="xs-font">Milestone</p></th>
+                    <th scope="col"><p class="xs-font">Date Completed</p></th>
                     {{!-- <th scope="col">Update</th> --}}
                 </tr>
             </thead>
             <tbody>
             {{#each devMilestones as |devMilestone|}}
                 <tr>
-                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</td>
-                    <td>{{devMilestone.devMilestone_dateComplete}}</td>
+                    <td><p class="xs-font"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{devMilestone.devMilestone}}</p></td>
+                    <td><strong class="child-date xs-font">{{devMilestone.devMilestone_dateComplete}}</strong></td>
                     {{!-- <td>Update</td> --}}
             {{/each}}
         </table>
@@ -50,16 +50,16 @@ Developmental Milestones</h2>
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Milestone</th>
-                    <th scope="col">Date Completed</th>
+                    <th scope="col"><p class="xs-font">Milestone</p></th>
+                    <th scope="col"><p class="xs-font">Date Completed</p></th>
                     {{!-- <th scope="col">Update</th> --}}
                 </tr>
             </thead>
             <tbody>
             {{#each medMilestones as |medMilestone|}}
                 <tr>
-                    <td><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</td>
-                    <td>{{medMilestone.medMilestone_dateComplete}}</td>
+                    <td><p class="xs-font"><i class="fa fa-check-circle icon-cog-body" aria-hidden="true"></i>&nbsp;{{medMilestone.medMilestone}}</p></td>
+                    <td><strong class="child-date xs-font">{{medMilestone.medMilestone_dateComplete}}</strong></td>
                     {{!-- <td>Update</td> --}}
             {{/each}}
         </table>
@@ -68,6 +68,7 @@ Developmental Milestones</h2>
     </div>
   </div>
 </div>
+<p class="text-right"><a href="/api/todos/{{id}}"><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;View ToDos</a></p>
 
 {{!-- 
 

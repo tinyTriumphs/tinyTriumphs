@@ -92,25 +92,34 @@ router.get('/:id', async (req, res) => {
     try {
         const toDoData = await Child.findByPk(req.params.id, {
             include: [
-                {
-                    model: devMilestones,
-                    where: {
-                        devMilestone_complete: false
-                    }
-                },
-                {
-                    model: medMilestones,
-                    where: {
-                        medMilestone_complete: false
-                    }
+              {
+                  model: devMilestones,
+                  where: {
+                      devMilestone_complete: false
+                  }
+              },
+              {
+                model: medMilestones,
+                where: {
+                  medMilestone_complete: false
                 }
-            ],
+              }
+            ]
         }
         );
         // console.log(toDoData);
         const childToDos = toDoData.get({ plain: true });
 
-        console.log(childToDos);
+        // const sortReturn = json.sort(function (a, b) {
+        //   return a.id - b.id
+        // })
+        // const sortedChildToDos = json.sort()
+
+        // console.log(sortedChildToDos);
+        // res.send(sortedChildToDos);
+
+        //TODO - Medical is rendering in reverse order; would love to sort by id?
+        // res.send(childToDos)
         res.render("childidtodos", {
             ...childToDos,
             logged_in: req.session.logged_in
