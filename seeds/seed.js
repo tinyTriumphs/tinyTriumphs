@@ -20,17 +20,6 @@ const seedDatabase = async () => {
   const development = await devMilestones.bulkCreate(devMilestonesData);
 
 
-///// SAMPLE FROM MINI PROJECT///
-// // removed second paramater from userData - {
-//     individualHooks: true,
-//     returning: true,
-//   }
-//   for (const project of projectData) {
-//     await Project.create({
-//       ...project,
-//       user_id: users[Math.floor(Math.random() * users.length)].id,
-//     });
-//   }
 
   process.exit(0);
 };
