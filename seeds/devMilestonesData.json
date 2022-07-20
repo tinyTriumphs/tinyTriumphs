@@ -1414,5 +1414,85 @@
         "devMilestone_expectedRange": "18 to 23 months",
         "devMilestone_dateComplete": "2020-06-12",
         "child_id": 4 
+    },
+    {
+        "devMilestone": "Tries to use a spoon",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Climbs on and off a couch or chair without help",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Notices when others are hurt or upset, i.e., like pausing or looking sad when someone is crying",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Looks at your face to see how to react in a new situation",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Points to at least two body parts when you ask them to show you",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Uses more gestures than just waving and pointing, i.e., like blowing a kiss or nodding yes",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Tries to use switches, knobs, or buttons on a toy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Runs",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Eats with a spoon",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Follows simple routines when told, i.e., like helping to pick up toys when you say, 'It is clean-up time.'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
     }
 ]
