@@ -393,5 +393,33 @@
         "medMilestone_ToDoDate": "2021-10-01",
         "medMilestone_dateComplete": "2021-10-01",
         "child_id": 2
+    },
+    {
+        "medMilestone": "PCV13 (Pneumococcal Conjugate), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2021-10-01",
+        "medMilestone_dateComplete": "2021-10-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "HepB (Hepatitis B), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "IPV (Inactivated Poliovirus), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2022-07-01",
+        "medMilestone_dateComplete": "2022-07-01",
+        "child_id": 2
+    },
+    {
+        "medMilestone": "HepB (Hepatitis B)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2021-04-01",
+        "medMilestone_dateComplete": "2021-04-01",
+        "child_id": 2
     }
 ]
