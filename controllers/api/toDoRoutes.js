@@ -12,25 +12,65 @@ router.get("/", async (req, res) => {
           where: {
             id: req.session.user_id,
           },
+        ],
+      });
+  
+      const childs = childData.map((childs) => childs.get({ plain: true }));
+  
+      console.log(childs);
+  
+      //TODO change to render when handlebars is functional
+      res.render("todos", {
+        childs,
+        logged_in: req.session.logged_in,
+        user_id: req.session.user_id,
+      });
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  });
+
+  router.put("/dev", async (req, res) => {
+    try {
+      // const devMilestonesResult = req.body;
+      // console.log(devMilestonesResult, `
+
+
+      // THIS IS THE REQUEST BODY ON THE SERVER
+      
+
+
+      // `);
+      const { devMilestone_dateComplete, id } = req.body
+      
+      const dev = await devMilestones.update(
+        {
+          devMilestone_dateComplete,
+          devMilestone_complete: true
         },
-      ],
-    });
+        {
+          where: {
+           id: id,
+          }
+        }
+      );
+      if(!dev) {
+        res.status(404).json({ message: "Not updated" });
+        return;
+      }
+      console.log(dev, `
+      
+      HERE IS THE DEV MILESTONE
+      
+      `);
+      
+      res.status(200).json(dev);
 
-    const childs = childData.map((childs) => childs.get({ plain: true }));
-
-    // console.log(childs);
-
-    //TODO change to render when handlebars is functional
-    res.render("todos", {
-      childs,
-      logged_in: req.session.logged_in,
-      user_id: req.session.user_id,
-    });
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
-
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  } )
+  
 //   router.post("/", withAuth, async (req, res) => {
 //     try {
 //       console.log(

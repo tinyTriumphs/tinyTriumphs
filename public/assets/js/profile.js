@@ -29,8 +29,8 @@ const newFormHandler = async (event) => {
         `);
 
     if (response.ok) {
-      // console.log(childBirthDate);
-        document.location.replace('/api/children');
+      console.log(childBirthDate);
+        // document.location.replace('/api/children');
       } else {
         alert('Failed to create child');
     }
