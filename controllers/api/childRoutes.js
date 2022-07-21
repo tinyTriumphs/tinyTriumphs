@@ -205,11 +205,13 @@ router.get("/:id", withAuth, async (req, res) => {
 
 // TODO: KALUKI delete child
 
-router.delete("/:id", withAuth, async (req, res) => {
+router.delete("/", withAuth, async (req, res) => {
   try {
+    const { id } = req.body;
+
     const childData = await Child.destroy({
       where: {
-        id: req.params.id,
+        id: id,
         user_id: req.session.user_id,
       },
     });
@@ -218,7 +220,7 @@ console.log(childData);
       res.status(404).json({ message: "No child found with this id!" });
       return;
     }
-
+    
     res.status(200).json(childData);
   } catch (err) {
     res.status(500).json(err);

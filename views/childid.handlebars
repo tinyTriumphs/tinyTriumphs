@@ -7,10 +7,14 @@
   <div>
     <h2>Profile Information</h2>
 
-    <div class="card"><p>
+    <div class="card child-card"><p>
 
         Name: <strong>{{name}}</strong><br>
         Birthdate: <strong class="single-child-date">{{birthdate}}</strong>
+        {{!-- INPUT FOR ID (PREFILLED) --}}
+        <input type="text" value="{{id}}" id="child-id" name="child-id" hidden>
+        <button class="delete-button">Delete Child</button>
+        
         {{!-- {{#each devMilestones as |devMilestone|}}
         <li>{{devMilestone.devMilestone}}: Completed on {{devMilestone.devMilestone_dateComplete}}</li>
         {{/each}} --}}
@@ -35,4 +39,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/assets/js/momentjs.js"></script>
 <script src="/assets/js/photo.js"></script>
+<script src="/assets/js/deletechild.js"></script>
 {{!-- <script src="/assets/utils/helpers.js"></script> --}}
