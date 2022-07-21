@@ -666,5 +666,68 @@
         "medMilestone_ToDoDate": "2019-12-10",
         "medMilestone_dateComplete": "2019-12-10",
         "child_id": 3
+    },
+    {
+        "medMilestone": "PCV13 (Pneumococcal Conjugate), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-12-10",
+        "medMilestone_dateComplete": "2019-12-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "HepB (Hepatitis B), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "IPV (Inactivated Poliovirus), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "Hib (Haemophilus Influenzae Type B), 3rd Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "Hib (Haemophilus Influenzae Type B), 4th Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "PCV13 (Pneumococcal Conjugate), 4th Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "MMR (Measles, Mumps, Rubella)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "VAR (Varicella)",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
+    },
+    {
+        "medMilestone": "Dtap (Diphtheria, Tetanus, & Acellular Pertussis), 4th Dose",
+        "medMilestone_complete": true,
+        "medMilestone_ToDoDate": "2019-09-10",
+        "medMilestone_dateComplete": "2019-09-10",
+        "child_id": 3
     }
 ]
