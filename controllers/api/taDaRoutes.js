@@ -31,35 +31,6 @@ router.get("/", async (req, res) => {
     }
   });
 
-
-//TODO - Render ALL COMPLETED milestones and appointments
-// router.get('/', async (req, res) => {
-//     try {
-//         const taDaData = await Child.findAll({
-//             include: [
-//                 {
-//                     model: devMilestones,
-//                     attributes: ['id', 'devMilestone', 'devMilestone_complete', 'devMilestone_expectedDate', 'devMilestone_expectedRange', 'devMilestone_dateComplete', 'child_id'],
-//                     where: {
-//                         devMilestone_complete: true
-//                     }
-//                 }
-//             ]
-//         });
-//         res.status(200).json(taDaData);
-
-//         const childTaDas = taDaData.get({ plain: true });
-
-//         res.render("childidtadas", {
-//             ...childTaDas,
-//             logged_in: true,
-//           });
-
-//     } catch (err) {
-//     res.status(500).json(err);
-//     }
-// });
-
 router.get('/:id', async (req, res) => {
     try {
         const taDaData = await Child.findByPk(req.params.id, {
@@ -77,11 +48,9 @@ router.get('/:id', async (req, res) => {
                     }
                 }
             ]
-        });console.log(taDaData);
+        });
 
         const childTaDas = taDaData.get({ plain: true });
-
-        console.log(childTaDas);
 
         res.render("childidtadas", {
             ...childTaDas,

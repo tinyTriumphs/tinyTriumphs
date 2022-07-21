@@ -170,9 +170,9 @@ router.post("/", withAuth, async (req, res) => {
   }
 });
 
+//GET a specific child by id
 router.get("/:id", withAuth, async (req, res) => {
   try {
-    //Finds all children associated w/ logged in user id
     const childData = await Child.findByPk(req.params.id, {
       include: [
         { model: User },
@@ -203,8 +203,7 @@ router.get("/:id", withAuth, async (req, res) => {
   }
 });
 
-// TODO: KALUKI delete child
-
+//DELETE a child
 router.delete("/", withAuth, async (req, res) => {
   try {
     const { id } = req.body;
@@ -215,7 +214,6 @@ router.delete("/", withAuth, async (req, res) => {
         user_id: req.session.user_id,
       },
     });
-console.log(childData);
     if (!childData) {
       res.status(404).json({ message: "No child found with this id!" });
       return;
