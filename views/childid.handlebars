@@ -2,7 +2,6 @@
 <div class="card text-center card w-75">
 
 <p class="text-center"><img src="{{profileImage}}" class="card-img-top rounded-circle square-img p-2" alt="{{name}} photo" id="imgid"></p>
-{{!-- <img class="card-img-top" src="{{profileImage}}" alt="Photo of {{name}}"> --}}
 
 <h1>{{name}}</h1>
   <div>
@@ -14,10 +13,6 @@
         Birthdate: <strong class="single-child-date">{{birthdate}}</strong>
         {{!-- INPUT FOR ID (PREFILLED) --}}
         <input type="text" value="{{id}}" id="child-id" name="child-id" hidden>
-
-        {{!-- {{#each devMilestones as |devMilestone|}}
-        <li>{{devMilestone.devMilestone}}: Completed on {{devMilestone.devMilestone_dateComplete}}</li>
-        {{/each}} --}}
         </p>
         
         <button class="btn btn-light newclass" type="button" data-toggle="collapse" data-target="#uploadPhoto" aria-expanded="false" aria-controls="collapseExample">
@@ -44,4 +39,3 @@
 <script src="/assets/js/momentjs.js"></script>
 <script src="/assets/js/photo.js"></script>
 <script src="/assets/js/deletechild.js"></script>
-{{!-- <script src="/assets/utils/helpers.js"></script> --}}
