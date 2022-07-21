@@ -1062,5 +1062,437 @@
         "devMilestone_expectedRange": "9 to 11 months",
         "devMilestone_dateComplete": "2022-03-01",
         "child_id": 2 
+    },
+    {
+        "devMilestone": "Calms down when spoken to or picked up",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-10-12",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2018-10-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Looks at your face",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-10-12",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2018-10-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Smiles when you talk to or smile at them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-10-12",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2018-10-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Reacts to loud sounds",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-10-12",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2018-10-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Watches you as you move",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-10-12",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2018-10-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Holds head up when on tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-10-12",
+        "devMilestone_expectedRange": "2 to 3 months",
+        "devMilestone_dateComplete": "2018-10-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "First Tooth",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-01-12",
+        "devMilestone_expectedRange": "3 to 6 months",
+        "devMilestone_dateComplete": "2019-01-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Smiles on their own to get your attention",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Chuckles (not yet a full laugh) when you try to make them laugh",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Makes sounds like “oooo”, “aahh” (cooing)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "If hungry, opens mouth when they see breast or bottle",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Holds head steady without support when you are holding them",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Holds a toy when you put it in their hand",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Pushes up onto elbows/forearms when on tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2018-12-12",
+        "devMilestone_expectedRange": "4 to 5 months",
+        "devMilestone_dateComplete": "2018-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Knows familiar people",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-03-12",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2019-03-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Laughs",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-03-12",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2019-03-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Blows 'raspberries' (sticks tongue out and blows)",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-03-12",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2019-03-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Rolls from tummy to back",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-03-12",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2019-03-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Pushes up with straight arms when on tummy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-03-12",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2019-03-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Leans on hands to support themselves when sitting",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-03-12",
+        "devMilestone_expectedRange": "6 to 8 months",
+        "devMilestone_dateComplete": "2019-03-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Shows several facial expressions, like happy, sad, angry, and surprised",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-12",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Reacts when you leave, i.e., looks, reaches for you, or cries",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-12",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Smiles or laughs when you play peek-a-boo",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-12",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Lifts arms up to be picked up",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-12",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Gets to a sitting position by themselves",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-12",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Sits without support",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-06-12",
+        "devMilestone_expectedRange": "9 to 11 months",
+        "devMilestone_dateComplete": "2019-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Waves 'bye-bye'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-09-12",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2020-09-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Calls a parent 'mama' or 'dada' or another special name",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-09-12",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2020-09-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Understands 'no', i.e., pauses briefly or stops when you say it",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-09-12",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2020-09-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Pulls up to stand",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-09-12",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2020-09-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Drinks from a cup without a lid, as you hold it",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-09-12",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2020-09-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Picks things up between thumb and pointer finger",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-09-12",
+        "devMilestone_expectedRange": "12 to 14 months",
+        "devMilestone_dateComplete": "2020-09-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Claps when excited",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-12-12",
+        "devMilestone_expectedRange": "15 to 17 months",
+        "devMilestone_dateComplete": "2019-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Shows you affection, i.e., hugs, cuddles, or kisses you",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-12-12",
+        "devMilestone_expectedRange": "15 to 17 months",
+        "devMilestone_dateComplete": "2019-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Looks at a familiar object when you name it",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-12-12",
+        "devMilestone_expectedRange": "15 to 17 months",
+        "devMilestone_dateComplete": "2019-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Tries to use things the right way, like a phone, cup, or book",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-12-12",
+        "devMilestone_expectedRange": "15 to 17 months",
+        "devMilestone_dateComplete": "2019-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Stacks at least two small objects, like blocks",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-12-12",
+        "devMilestone_expectedRange": "15 to 17 months",
+        "devMilestone_dateComplete": "2019-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Takes a few steps on their own",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2019-12-12",
+        "devMilestone_expectedRange": "15 to 17 months",
+        "devMilestone_dateComplete": "2019-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Points to show you something interesting",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Tries to say three or more words besides 'mama' or 'dada'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Walks without holding on to anyone or anything",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Scribbles",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Drinks from a cup without a lid and may spill sometimes",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Feeds themselves using their fingers",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Tries to use a spoon",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Climbs on and off a couch or chair without help",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-06-12",
+        "devMilestone_expectedRange": "18 to 23 months",
+        "devMilestone_dateComplete": "2020-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Notices when others are hurt or upset, i.e., like pausing or looking sad when someone is crying",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Looks at your face to see how to react in a new situation",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Points to at least two body parts when you ask them to show you",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Uses more gestures than just waving and pointing, i.e., like blowing a kiss or nodding yes",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Tries to use switches, knobs, or buttons on a toy",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Runs",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Eats with a spoon",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2020-12-12",
+        "devMilestone_expectedRange": "24 to 29 months",
+        "devMilestone_dateComplete": "2020-12-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Follows simple routines when told, i.e., like helping to pick up toys when you say, 'It is clean-up time.'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
     }
 ]
