@@ -66,7 +66,7 @@ router.get("/", async (req, res) => {
         },
         {
           where: {
-           id: id,
+          id: id,
           }
         }
       );
