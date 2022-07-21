@@ -1494,5 +1494,69 @@
         "devMilestone_expectedRange": "30 to 35 months",
         "devMilestone_dateComplete": "2021-06-12",
         "child_id": 4 
+    },
+    {
+        "devMilestone": "Says about 50 words",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Says words like 'I,' 'me,' or 'we'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Uses things to pretend, i.e., like feeding a block to a doll as if it were food",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Shows simple problem-solving skills, i.e., like standing on a small stool to reach something",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Follows two-step instructions, i.e., like 'Put the toy down and close the door.'",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Jumps off the ground with both feet",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2021-06-12",
+        "devMilestone_expectedRange": "30 to 35 months",
+        "devMilestone_dateComplete": "2021-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Notices other children and joins them to play",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-12",
+        "devMilestone_expectedRange": "36 to 47 months",
+        "devMilestone_dateComplete": "2022-06-12",
+        "child_id": 4 
+    },
+    {
+        "devMilestone": "Talks with you in conversation using at least two back-and-forth exchanges",
+        "devMilestone_complete": true,
+        "devMilestone_expectedDate": "2022-06-12",
+        "devMilestone_expectedRange": "36 to 47 months",
+        "devMilestone_dateComplete": "2022-06-12",
+        "child_id": 4 
     }
 ]
