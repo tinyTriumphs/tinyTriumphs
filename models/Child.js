@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Child extends Model {}
 
+//Child model
 Child.init(
   {
     id: {
@@ -15,31 +16,18 @@ Child.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // NEW FIELD
     birthdate: {
-      // DATEONLY = string representing the date in the ISO format of YYYY-MM-DD.
       type: DataTypes.DATEONLY,
       allowNull: false,
-      // defaultValue: DataTypes.NOW,
     },
     gender: {
-      // type: DataTypes.ENUM,
-      // allowNull: false,
-      // value: ['male', 'female', 'other'],
       type: DataTypes.STRING,
-      // validate: {
-      //   isIn: [[
-      //   'female',
-      //   'male',
-      //   'other'
-      //   ]],
-      // }
     },
     profileImage: {
       type: DataTypes.STRING,
+      //Sets a default image when a child is created
       defaultValue: "https://tinytriumphs-upload.s3.amazonaws.com/uploads/781a208f-5d65-4fe0-b4d5-bed125b185da-placeholderbabyimage.jpg"
     },
-    //Do we need to keep this?
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,

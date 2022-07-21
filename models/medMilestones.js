@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 
 class medMilestones extends Model {}
 
+//Medical Milestone Model
 medMilestones.init(
   {
     id: {
@@ -17,28 +18,27 @@ medMilestones.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // NEW FIELD - Is this milestone completed yes/no
+    // Is this milestone completed - yes/no
     medMilestone_complete: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
         //Boolean default value is automatically false, which means milestone isn't completed
       },
-    //NEW FIELD - when the procedure/appointment is recommended to occur
+    //When the procedure/appointment is recommended to occur
     medMilestone_ToDoDate: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    //NEW FIELD - the RANGE of the milestone expected to occur - i.e. 3-6 months
+    //The RANGE of the milestone expected to occur - i.e. 3-6 months
     medMilestone_expectedRange: {
       type: DataTypes.STRING,
     allowNull: true,
     },
-    //NEW FIELD - when the procedure/appointment is scheduled/took place - i.e. April 1, 2022
+    //When the procedure/appointment is scheduled/took place - i.e. April 1, 2022
     medMilestone_dateComplete: {
         type: DataTypes.STRING,
         allowNull: true
     },
-    // ?? Do we need to keep this?
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,

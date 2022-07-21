@@ -1,17 +1,13 @@
-<div class="text-center">
+<div class="d-flex justify-content-center text-center">
   <div>
   {{#if childs.length}}
     <h1><i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;ToDos</h1>
     <h2>Select your Child:</h2>
-    {{!-- <div id ="newid">
-    <button class="newclass" type="button">My button</button>
-    </div> --}}
     <div>
       {{#each childs as |child|}}
-      <div class="card">
+      <div class="card text-center card" >
         <a href="/api/todos/{{child.id}}" class="btn btn-light">
         <p class="text-center"><img src="{{child.profileImage}}" class="card-img-top rounded-circle square-img p-2" alt="{{child.name}} photo" id="imgid"></p>
-        {{!-- <img src="{{child.profileImage}}" class="card"> --}}
         <i class="fa fa-check-circle-o icon-cog-body" aria-hidden="true"></i>&nbsp;{{child.name}}</a>
      </div>
       {{/each}}

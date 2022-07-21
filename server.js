@@ -4,7 +4,6 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-// const helpers = require('./utils/helpers');
 const multer = require('multer');
 const uuid = require('uuid').v4;
 
@@ -65,7 +64,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 //USES LOCAL STORAGE ONLY - NOT NEEDED FOR AWS UPLOADS
-//Leaving in if we want to use this in the future
+//** Leaving in if we want to use this in the future
 // const storage = multer.diskStorage({
 //   destination: (req, file, cb) => {
 //     cb(null, "uploads");
@@ -94,7 +93,7 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({
   storage, 
   fileFilter, 
-  //limits file size to 1MB
+  //limits file size to 10MB
   limits: {fileSize: 10000000} });
 
 //upload functionality on a post request through/upload for a single image
