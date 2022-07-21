@@ -36,8 +36,8 @@
             {{!-- <h4 class="text-white">Collapsed content</h4>
             <span class="text-muted">Toggleable via the navbar brand.</span> --}}
             <div>
-              {{#if logged_in}}
               <nav class="nav nav-pills flex-column flex-sm-row text-center justify-content-around">
+              {{#if logged_in}}
                 <a href="/" class="btn btn-dark"><i class="fa fa-home icon-cog" aria-hidden="true"></i>&nbsp;Home</a>
                 <a href="/profile" class="btn btn-dark"><i class="fa fa-user icon-cog" aria-hidden="true"></i>&nbsp;Profile</a>
                 <a href="/api/children" class="btn btn-dark"><i class="fa fa-users icon-cog" aria-hidden="true"></i>&nbsp;Children</a>
@@ -45,12 +45,13 @@
                 <a href="/api/tadas" class="btn btn-dark"><i class="fa fa-check-circle icon-cog" aria-hidden="true"></i>&nbsp;TaDas</a>
                 <a href="/about" class="btn btn-dark"><i class="fa fa-info-circle icon-cog" aria-hidden="true"></i>&nbsp;About</a>
                 <button type="button" class="btn btn-dark" id="logout"><i class="fa fa-sign-out icon-cog" aria-hidden="true"></i>&nbsp;Logout</button>
-              </nav>
               {{else}}
+              <a href="/" class="btn btn-dark"><i class="fa fa-home icon-cog" aria-hidden="true"></i>&nbsp;Home</a>
               <a href="/about" class="btn btn-dark"><i class="fa fa-info-circle icon-cog" aria-hidden="true"></i>&nbsp;About</a>
               <a href="/login" class="btn btn-dark"><i class="fa fa-sign-in icon-cog" aria-hidden="true"></i>&nbsp;Login or Sign Up</a>
               
               {{/if}}
+              </nav>
               </div>
           </div>
         </div>
@@ -62,7 +63,7 @@
       {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
 
