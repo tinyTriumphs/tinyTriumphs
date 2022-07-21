@@ -1,13 +1,13 @@
-///@TOM this is a direct copy from mini project
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
+//User Model
 class User extends Model {
   checkPassword(loginPw) {
-    console.log(loginPw);
-    console.log(bcrypt.compareSync(loginPw.toString(), this.password));
-    console.log(this.password);
+    // console.log(loginPw);
+    // console.log(bcrypt.compareSync(loginPw.toString(), this.password));
+    // console.log(this.password);
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
@@ -32,7 +32,6 @@ User.init(
         isEmail: true,
       },
     },
-    //TODO: Tom add once validation and bcrypt works
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -42,7 +41,6 @@ User.init(
     },
   },
   {
-    //TODO: Tom bcrypt hook
     hooks: {
       beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);

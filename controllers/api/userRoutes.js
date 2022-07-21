@@ -2,9 +2,6 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const User = require('../../models/User');
 
-//TODO: Tom//
-/////SAMPLE FROM MINIPROJECT////
-
 router.post('/', async (req, res) => {
     try {
       const userData = await User.create(req.body);
@@ -33,7 +30,7 @@ router.post('/login', async (req, res) => {
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
-console.log(req.body.password);
+
     if (!validPassword) {
         res
         .status(400)
