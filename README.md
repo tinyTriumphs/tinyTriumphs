@@ -1,5 +1,8 @@
 # TinyTriumphs: A Child Tracker App
 
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+
 ## Description
 
 Keeping up with your baby’s needs can be an overwhelming experience for most parents. tinyTriumphs seeks to ease this process by helping parents keep track of their children’s developmental and medical milestones all in one place!
@@ -37,7 +40,7 @@ Run the following command to start MySQL server
 
 Enter the MySQL password then run
 * `source db/schema.sql`
-* `exit`
+
 Then 
 * `npm run seed`
 * `npm start`
