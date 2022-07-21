@@ -5,6 +5,10 @@ header, .project:not(:last-child) {
   a {
     color: #6f42c1;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: #b394ea;
     text-decoration: none;
   }
 
