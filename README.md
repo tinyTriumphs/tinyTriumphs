@@ -9,6 +9,7 @@ Keeping up with your baby’s needs can be an overwhelming experience for most p
 
 TinyTriumphs is a child tracker website, where a user can add, edit, delete their childrens developmental and medical milestones and take them from ToDo's to TaDa's. The application utilizes Node, Express, Handlebars, Multer, Moment.js, Sequelize and MySQL.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://tinytriumphs.herokuapp.com/)
 
 ![tinyTriumps Homepage](https://user-images.githubusercontent.com/101844445/180118684-9770b5de-3fc2-4488-b737-a94a2ea47dd3.png)
 ![tinyTriumphs Child Profile](https://user-images.githubusercontent.com/101844445/180118778-b2a71487-b1b9-4d9c-8f0e-5d27cf997da6.png)
